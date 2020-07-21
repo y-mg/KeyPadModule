@@ -8,264 +8,37 @@
 
 ### XML
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 15px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 15px;word-break:normal;}
-.tg .xml-header-default{background-color:#272822;border-color:#272822;color:#e6db74;font-size:15px;font-weight:bold;text-align:left;
-  vertical-align:top}
-.tg .xml-option{background-color:#272822;border-color:#272822;color:#66d9ef;font-size:13px;text-align:left;vertical-align:top}
-.tg .xml-header-description{background-color:#272822;border-color:#272822;color:#f8f8f2;font-size:15px;font-weight:bold;text-align:left;
-  vertical-align:top}
-.tg .xml-header-option{background-color:#272822;border-color:#272822;color:#66d9ef;font-size:15px;font-weight:bold;text-align:left;
-  vertical-align:top}
-.tg .xml-default{background-color:#272822;border-color:#272822;color:#e6db74;font-size:13px;text-align:left;vertical-align:top}
-.tg .xml-description{background-color:#272822;border-color:#272822;color:#f8f8f2;font-size:13px;text-align:left;vertical-align:top}
-</style>
-
-<table class="tg">
-<thead>
-  <tr>
-    <th class="xml-header-option">Option</th>
-    <th class="xml-header-default">Default</th>
-    <th class="xml-header-description">Description</th>
-  </tr>
-</thead>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpTextCheckFormat</td>
-    <td class="xml-default">true</td>
-    <td class="xml-description">입력값 포맷 체크 여부</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpTextMaxLength</td>
-    <td class="xml-default">20</td>
-    <td class="xml-description">입력할 수 있는 최대 자리 수</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpxml-defaultButtonTextSize</td>
-    <td class="xml-default">24</td>
-    <td class="xml-description">기본 버튼 글자 크기</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpxml-defaultButtonTextColor</td>
-    <td class="xml-default">#000000</td>
-    <td class="xml-description">기본 버튼 글자 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpxml-defaultButtonBackgroundColor</td>
-    <td class="xml-default">#00000000</td>
-    <td class="xml-description">기본 버튼 배경 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpxml-defaultButtonRippleColor</td>
-    <td class="xml-default">#00000000</td>
-    <td class="xml-description">기본 버튼 클릭 효과 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpxml-defaultButtonCornerRadius</td>
-    <td class="xml-default">0dp</td>
-    <td class="xml-description">기본 버튼 코너</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpxml-defaultButtonStrokeWidth</td>
-    <td class="xml-default">0dp</td>
-    <td class="xml-description">기본 버튼 테두리 두께</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpxml-defaultButtonStrokeColor</td>
-    <td class="xml-default">0dp</td>
-    <td class="xml-description">기본 버튼 테두리 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDeleteButtonIcon</td>
-    <td class="xml-default">btn_keyboard_del_black.png</td>
-    <td class="xml-description">삭제 버튼 아이콘</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDeleteButtonIconSize</td>
-    <td class="xml-default">24dp</td>
-    <td class="xml-description">삭제 버튼 아이콘 크기</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDeleteButtonBackgroundColor</td>
-    <td class="xml-default">#00000000</td>
-    <td class="xml-description">삭제 버튼 배경 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDeleteButtonRippleColor</td>
-    <td class="xml-default">#00000000</td>
-    <td class="xml-description">삭제 버튼 클릭 효과 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDeleteButtonCornerRadius</td>
-    <td class="xml-default">0dp</td>
-    <td class="xml-description">삭제 버튼 코너</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDeleteButtonStrokeWidth</td>
-    <td class="xml-default">0dp</td>
-    <td class="xml-description">삭제 버튼 테두리 두께</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDeleteButtonStrokeColor</td>
-    <td class="xml-default">#00000000</td>
-    <td class="xml-description">삭제 버튼 테두리 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpClearButtonEnabled</td>
-    <td class="xml-default">false</td>
-    <td class="xml-description">전체삭제 버튼 적용 여부</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpClearButtonText</td>
-    <td class="xml-default">CLEAR</td>
-    <td class="xml-description">전체삭제 버튼 텍스트</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpClearButtonTextSize</td>
-    <td class="xml-default">24</td>
-    <td class="xml-description">전체삭제 버튼 글자 크기</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpClearButtonTextColor</td>
-    <td class="xml-default">#000000</td>
-    <td class="xml-description">전체삭제 버튼 글자 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpClearButtonBackgroundColor</td>
-    <td class="xml-default">#00000000</td>
-    <td class="xml-description">전체삭제 버튼 배경 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpClearButtonRippleColor</td>
-    <td class="xml-default">#00000000</td>
-    <td class="xml-description">전체삭제 버튼 클릭 효과 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpClearButtonCornerRadius</td>
-    <td class="xml-default">0dp</td>
-    <td class="xml-description">전체삭제 버튼 코너</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpClearButtonStrokeWidth</td>
-    <td class="xml-default">0dp</td>
-    <td class="xml-description">전체삭제 버튼 테두리 두께</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpClearButtonStrokeColor</td>
-    <td class="xml-default">#00000000</td>
-    <td class="xml-description">전체삭제 버튼 테두리 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDividerColor</td>
-    <td class="xml-default">#00000000</td>
-    <td class="xml-description">구분선 색상</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDividerWidth</td>
-    <td class="xml-default">0dp</td>
-    <td class="xml-description">세로 구분선 폭</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpDividerHeight</td>
-    <td class="xml-default">0dp</td>
-    <td class="xml-description">가로 구분선 높이</td>
-  </tr>
-</tbody>
-
-<tbody>
-  <tr>
-    <td class="xml-option">nkpRootBackgroundDrawable</td>
-    <td class="xml-default">#ffffff</td>
-    <td class="xml-description">배경</td>
-  </tr>
-</tbody>
-</table>
+| <span style="color:DodgerBlue">Option</span> | <span style="color:LimeGreen">Default</span> | <span style="color:Black">Description</span> |
+|:----------|:----------|:----------|
+| <span style="color:DodgerBlue">nkpTextCheckFormat</span> | <span style="color:LimeGreen">true</span> | <span style="color:Black">입력값 포맷 체크 여부</span> |
+| <span style="color:DodgerBlue">nkpTextMaxLength</span> | <span style="color:LimeGreen">20</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDefaultButtonTextSize</span> | <span style="color:LimeGreen">24</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDefaultButtonTextColor</span> | <span style="color:LimeGreen">#000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDefaultButtonBackgroundColor</span> | <span style="color:LimeGreen">#00000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDefaultButtonRippleColor</span> | <span style="color:LimeGreen">#00000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDefaultButtonCornerRadius</span> | <span style="color:LimeGreen">0dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDefaultButtonStrokeWidth</span> | <span style="color:LimeGreen">0dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDefaultButtonStrokeColor</span> | <span style="color:LimeGreen">0dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDeleteButtonIcon</span> | <span style="color:LimeGreen">btn_keyboard_del_black.png</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDeleteButtonIconSize</span> | <span style="color:LimeGreen">24dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDeleteButtonBackgroundColor</span> | <span style="color:LimeGreen">#00000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDeleteButtonRippleColor</span> | <span style="color:LimeGreen">#00000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDeleteButtonCornerRadius</span> | <span style="color:LimeGreen">0dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDeleteButtonStrokeWidth</span> | <span style="color:LimeGreen">0dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDeleteButtonStrokeColor</span> | <span style="color:LimeGreen">#00000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpClearButtonEnabled</span> | <span style="color:LimeGreen">false</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpClearButtonText</span> | <span style="color:LimeGreen">CLEAR</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpClearButtonTextSize</span> | <span style="color:LimeGreen">24</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpClearButtonTextColor</span> | <span style="color:LimeGreen">#000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpClearButtonBackgroundColor</span> | <span style="color:LimeGreen">#00000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpClearButtonRippleColor</span> | <span style="color:LimeGreen">#00000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpClearButtonCornerRadius</span> | <span style="color:LimeGreen">0dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpClearButtonStrokeWidth</span> | <span style="color:LimeGreen">0dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpClearButtonStrokeColor</span> | <span style="color:LimeGreen">#00000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDividerColor</span> | <span style="color:LimeGreen">#00000000</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDividerWidth</span> | <span style="color:LimeGreen">0dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpDividerHeight</span> | <span style="color:LimeGreen">0dp</span> | <span style="color:Black">입력값</span> |
+| <span style="color:DodgerBlue">nkpRootBackgroundDrawable</span> | <span style="color:LimeGreen">#ffffff</span> | <span style="color:Black">입력값</span> |
 
 ### Kotlin
 
