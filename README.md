@@ -7,7 +7,6 @@
 |**cell 1x1** |cell 1x2 |cell 1x3 |
 |**cell 2x1** |cell 2x2 |cell 2x3 |
 |**cell 3x1** |cell 3x2 |cell 3x3 |
-|**nkpTextCheckFormat** |true |입력값 포맷 체크 여부 |
 
 ## 1. NumberKeyPadView
 
