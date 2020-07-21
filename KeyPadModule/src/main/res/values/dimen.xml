@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Number Key Pad -->
+    <dimen name="number_key_pad_default_corner_radius">0dp</dimen>
+    <dimen name="number_key_pad_default_stroke_width">0dp</dimen>
+    <dimen name="number_key_pad_default_icon_size">24dp</dimen>
+    <dimen name="number_key_pad_default_divider_width">0dp</dimen>
+    <dimen name="number_key_pad_default_divider_height">0dp</dimen>
+
+
+
+    <!-- Decimal Key Pad -->
+    <dimen name="decimal_key_pad_default_corner_radius">0dp</dimen>
+    <dimen name="decimal_key_pad_default_stroke_width">0dp</dimen>
+    <dimen name="decimal_key_pad_default_icon_size">24dp</dimen>
+    <dimen name="decimal_key_pad_default_divider_width">0dp</dimen>
+    <dimen name="decimal_key_pad_default_divider_height">0dp</dimen>
+
+
+
+    <!-- Pin Indicator -->
+    <dimen name="pin_indicator_default_dot_diameter">16dp</dimen>
+    <dimen name="pin_indicator_default_dot_space">8dp</dimen>
+
+
+
+    <!-- Pin Key Pad Vertical -->
+    <dimen name="pin_key_pad_vertical_default_corner_radius">0dp</dimen>
+    <dimen name="pin_key_pad_vertical_default_stroke_width">0dp</dimen>
+    <dimen name="pin_key_pad_vertical_default_icon_size">24dp</dimen>
+    <dimen name="pin_key_pad_vertical_default_divider_width">0dp</dimen>
+    <dimen name="pin_key_pad_vertical_default_divider_height">0dp</dimen>
+
+
+
+    <!-- Pin Key Pad Horizontal -->
+    <dimen name="pin_key_pad_horizontal_default_corner_radius">0dp</dimen>
+    <dimen name="pin_key_pad_horizontal_default_stroke_width">0dp</dimen>
+    <dimen name="pin_key_pad_horizontal_default_icon_size">24dp</dimen>
+    <dimen name="pin_key_pad_horizontal_default_divider_width">0dp</dimen>
+    <dimen name="pin_key_pad_horizontal_default_divider_height">0dp</dimen>
+
+</resources>

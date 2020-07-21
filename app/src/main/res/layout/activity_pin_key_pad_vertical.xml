@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C5555">
+
+    <com.ymg.keypadmodule.pin.indicator.PinIndicatorView
+        android:id="@+id/pinIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:piDotLength="4"
+        app:piDotDiameter="32dp"
+        app:piDotSpace="3dp"
+        app:piFillDotDrawable="@drawable/icon_pin_on"
+        app:piEmptyDotDrawable="@drawable/icon_pin_off"
+        app:layout_constraintBottom_toTopOf="@+id/pinKeyPadVerticalView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ymg.keypadmodule.pin.vertical.PinKeyPadVerticalView
+        android:id="@+id/pinKeyPadVerticalView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:pkpvDefaultButtonTextSize="12"
+        app:pkpvDefaultButtonTextColor="@color/red_ff0016"
+        app:pkpvDefaultButtonBackgroundColor="@color/white_ffffff"
+        app:pkpvDefaultButtonRippleColor="@color/red_ff0016"
+        app:pkpvDefaultButtonCornerRadius="3dp"
+        app:pkpvDefaultButtonStrokeWidth="2dp"
+        app:pkpvDefaultButtonStrokeColor="@color/gray_ebebeb"
+        app:pkpvDeleteButtonIcon="@drawable/icon_back"
+        app:pkpvDeleteButtonIconSize="12dp"
+        app:pkpvDeleteButtonBackgroundColor="@color/white_ffffff"
+        app:pkpvDeleteButtonRippleColor="@color/red_ff0016"
+        app:pkpvDeleteButtonCornerRadius="3dp"
+        app:pkpvDeleteButtonStrokeWidth="2dp"
+        app:pkpvDeleteButtonStrokeColor="@color/gray_ebebeb"
+        app:pkpvClearButtonEnabled="true"
+        app:pkpvClearButtonText="CLEAR"
+        app:pkpvClearButtonTextSize="12"
+        app:pkpvClearButtonTextColor="@color/red_ff0016"
+        app:pkpvClearButtonBackgroundColor="@color/white_ffffff"
+        app:pkpvClearButtonRippleColor="@color/red_ff0016"
+        app:pkpvClearButtonCornerRadius="3dp"
+        app:pkpvClearButtonStrokeWidth="2dp"
+        app:pkpvClearButtonStrokeColor="@color/gray_ebebeb"
+        app:pkpvDividerColor="@color/red_ff0016"
+        app:pkpvDividerWidth="3dp"
+        app:pkpvDividerHeight="3dp"
+        app:pkpvRootBackgroundDrawable="@color/black_000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

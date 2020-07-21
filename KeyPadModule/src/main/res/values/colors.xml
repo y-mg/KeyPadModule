@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Transparent -->
+    <color name="transparent_00000000">#00000000</color>
+
+    <!-- White -->
+    <color name="white_ffffff">#ffffff</color>
+
+    <!-- Black -->
+    <color name="black_000000">#000000</color>
+
+    <!-- Gray -->
+    <color name="gray_ebebeb">#ebebeb</color>
+
+</resources>

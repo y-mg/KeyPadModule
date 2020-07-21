@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textKeyPadValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/black_000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="123123"/>
+
+    <com.ymg.keypadmodule.number.NumberKeyPadView
+        android:id="@+id/numberKeyPadView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:nkpTextCheckFormat="false"
+        app:nkpTextMaxLength="10"
+        app:nkpDefaultButtonTextSize="12"
+        app:nkpDefaultButtonTextColor="@color/red_ff0016"
+        app:nkpDefaultButtonBackgroundColor="@color/white_ffffff"
+        app:nkpDefaultButtonRippleColor="@color/red_ff0016"
+        app:nkpDefaultButtonCornerRadius="3dp"
+        app:nkpDefaultButtonStrokeWidth="2dp"
+        app:nkpDefaultButtonStrokeColor="@color/gray_ebebeb"
+        app:nkpDeleteButtonIcon="@drawable/icon_back"
+        app:nkpDeleteButtonIconSize="12dp"
+        app:nkpDeleteButtonBackgroundColor="@color/white_ffffff"
+        app:nkpDeleteButtonRippleColor="@color/red_ff0016"
+        app:nkpDeleteButtonCornerRadius="3dp"
+        app:nkpDeleteButtonStrokeWidth="2dp"
+        app:nkpDeleteButtonStrokeColor="@color/gray_ebebeb"
+        app:nkpClearButtonEnabled="true"
+        app:nkpClearButtonText="CLEAR"
+        app:nkpClearButtonTextSize="12"
+        app:nkpClearButtonTextColor="@color/red_ff0016"
+        app:nkpClearButtonBackgroundColor="@color/white_ffffff"
+        app:nkpClearButtonRippleColor="@color/red_ff0016"
+        app:nkpClearButtonCornerRadius="3dp"
+        app:nkpClearButtonStrokeWidth="2dp"
+        app:nkpClearButtonStrokeColor="@color/gray_ebebeb"
+        app:nkpDividerColor="@color/red_ff0016"
+        app:nkpDividerWidth="3dp"
+        app:nkpDividerHeight="3dp"
+        app:nkpRootBackgroundDrawable="@color/black_000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

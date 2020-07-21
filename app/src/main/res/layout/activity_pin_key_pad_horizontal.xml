@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C5555">
+
+    <com.ymg.keypadmodule.pin.indicator.PinIndicatorView
+        android:id="@+id/pinIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:piDotLength="4"
+        app:piDotDiameter="32dp"
+        app:piDotSpace="3dp"
+        app:piFillDotDrawable="@drawable/icon_pin_on"
+        app:piEmptyDotDrawable="@drawable/icon_pin_off"
+        app:layout_constraintBottom_toTopOf="@+id/pinKeyPadHorizontalView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ymg.keypadmodule.pin.horizontal.PinKeyPadHorizontalView
+        android:id="@+id/pinKeyPadHorizontalView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:pkphDefaultButtonTextSize="12"
+        app:pkphDefaultButtonTextColor="@color/red_ff0016"
+        app:pkphDefaultButtonBackgroundColor="@color/white_ffffff"
+        app:pkphDefaultButtonRippleColor="@color/red_ff0016"
+        app:pkphDefaultButtonCornerRadius="3dp"
+        app:pkphDefaultButtonStrokeWidth="2dp"
+        app:pkphDefaultButtonStrokeColor="@color/gray_ebebeb"
+        app:pkphDeleteButtonIcon="@drawable/icon_back"
+        app:pkphDeleteButtonIconSize="12dp"
+        app:pkphDeleteButtonBackgroundColor="@color/white_ffffff"
+        app:pkphDeleteButtonRippleColor="@color/red_ff0016"
+        app:pkphDeleteButtonCornerRadius="3dp"
+        app:pkphDeleteButtonStrokeWidth="2dp"
+        app:pkphDeleteButtonStrokeColor="@color/gray_ebebeb"
+        app:pkphClearButtonText="CLEAR"
+        app:pkphClearButtonTextSize="12"
+        app:pkphClearButtonTextColor="@color/red_ff0016"
+        app:pkphClearButtonBackgroundColor="@color/white_ffffff"
+        app:pkphClearButtonRippleColor="@color/red_ff0016"
+        app:pkphClearButtonCornerRadius="3dp"
+        app:pkphClearButtonStrokeWidth="2dp"
+        app:pkphClearButtonStrokeColor="@color/gray_ebebeb"
+        app:pkphEmptyButtonIcon="@drawable/icon_close"
+        app:pkphEmptyButtonIconSize="12dp"
+        app:pkphEmptyButtonBackgroundColor="@color/gray_ebebeb"
+        app:pkphEmptyButtonCornerRadius="0dp"
+        app:pkphEmptyButtonStrokeWidth="0dp"
+        app:pkphEmptyButtonStrokeColor="@color/transparent_00000000"
+        app:pkphDividerColor="@color/red_ff0016"
+        app:pkphDividerWidth="3dp"
+        app:pkphDividerHeight="3dp"
+        app:pkphRootBackgroundDrawable="@color/black_000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+include ':KeyPadModule'
+include ':app'
+rootProject.name = "KeyPadView"

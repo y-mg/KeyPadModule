@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Number Key Pad -->
+    <declare-styleable name="NumberKeyPadStyle">
+        <attr name="nkpTextCheckFormat" format="boolean"/>
+        <attr name="nkpTextMaxLength" format="integer"/>
+        <attr name="nkpDefaultButtonTextSize" format="integer"/>
+        <attr name="nkpDefaultButtonTextColor" format="reference"/>
+        <attr name="nkpDefaultButtonBackgroundColor" format="reference"/>
+        <attr name="nkpDefaultButtonRippleColor" format="reference"/>
+        <attr name="nkpDefaultButtonCornerRadius" format="dimension"/>
+        <attr name="nkpDefaultButtonStrokeWidth" format="dimension"/>
+        <attr name="nkpDefaultButtonStrokeColor" format="reference"/>
+        <attr name="nkpDeleteButtonIcon" format="reference"/>
+        <attr name="nkpDeleteButtonIconSize" format="dimension"/>
+        <attr name="nkpDeleteButtonBackgroundColor" format="reference"/>
+        <attr name="nkpDeleteButtonRippleColor" format="reference"/>
+        <attr name="nkpDeleteButtonCornerRadius" format="dimension"/>
+        <attr name="nkpDeleteButtonStrokeWidth" format="dimension"/>
+        <attr name="nkpDeleteButtonStrokeColor" format="reference"/>
+        <attr name="nkpClearButtonEnabled" format="boolean"/>
+        <attr name="nkpClearButtonText" format="string"/>
+        <attr name="nkpClearButtonTextSize" format="integer"/>
+        <attr name="nkpClearButtonTextColor" format="reference"/>
+        <attr name="nkpClearButtonBackgroundColor" format="reference"/>
+        <attr name="nkpClearButtonRippleColor" format="reference"/>
+        <attr name="nkpClearButtonCornerRadius" format="dimension"/>
+        <attr name="nkpClearButtonStrokeWidth" format="dimension"/>
+        <attr name="nkpClearButtonStrokeColor" format="reference"/>
+        <attr name="nkpDividerColor" format="reference"/>
+        <attr name="nkpDividerWidth" format="dimension"/>
+        <attr name="nkpDividerHeight" format="dimension"/>
+        <attr name="nkpRootBackgroundDrawable" format="reference"/>
+    </declare-styleable>
+
+
+
+    <!-- Decimal Key Pad -->
+    <declare-styleable name="DecimalKeyPadStyle">
+        <attr name="dkpTextMaxLength" format="integer"/>
+        <attr name="dkpTextDecimalCut" format="integer"/>
+        <attr name="dkpDefaultButtonTextSize" format="integer"/>
+        <attr name="dkpDefaultButtonTextColor" format="reference"/>
+        <attr name="dkpDefaultButtonBackgroundColor" format="reference"/>
+        <attr name="dkpDefaultButtonRippleColor" format="reference"/>
+        <attr name="dkpDefaultButtonCornerRadius" format="dimension"/>
+        <attr name="dkpDefaultButtonStrokeWidth" format="dimension"/>
+        <attr name="dkpDefaultButtonStrokeColor" format="reference"/>
+        <attr name="dkpDeleteButtonIcon" format="reference"/>
+        <attr name="dkpDeleteButtonIconSize" format="dimension"/>
+        <attr name="dkpDeleteButtonBackgroundColor" format="reference"/>
+        <attr name="dkpDeleteButtonRippleColor" format="reference"/>
+        <attr name="dkpDeleteButtonCornerRadius" format="dimension"/>
+        <attr name="dkpDeleteButtonStrokeWidth" format="dimension"/>
+        <attr name="dkpDeleteButtonStrokeColor" format="reference"/>
+        <attr name="dkpDotButtonTextSize" format="integer"/>
+        <attr name="dkpDotButtonTextColor" format="reference"/>
+        <attr name="dkpDotButtonBackgroundColor" format="reference"/>
+        <attr name="dkpDotButtonRippleColor" format="reference"/>
+        <attr name="dkpDotButtonCornerRadius" format="dimension"/>
+        <attr name="dkpDotButtonStrokeWidth" format="dimension"/>
+        <attr name="dkpDotButtonStrokeColor" format="reference"/>
+        <attr name="dkpDividerColor" format="reference"/>
+        <attr name="dkpDividerWidth" format="dimension"/>
+        <attr name="dkpDividerHeight" format="dimension"/>
+        <attr name="dkpRootBackgroundDrawable" format="reference"/>
+    </declare-styleable>
+
+
+
+    <!-- Pin Indicator -->
+    <declare-styleable name="PinIndicatorStyle">
+        <attr name="piDotLength" format="integer" />
+        <attr name="piDotDiameter" format="dimension" />
+        <attr name="piDotSpace" format="dimension" />
+        <attr name="piFillDotDrawable" format="reference" />
+        <attr name="piEmptyDotDrawable" format="reference" />
+    </declare-styleable>
+
+
+
+    <!-- Pin Key Pad Vertical -->
+    <declare-styleable name="PinKeyPadVerticalStyle">
+        <attr name="pkpvDefaultButtonTextSize" format="integer"/>
+        <attr name="pkpvDefaultButtonTextColor" format="reference"/>
+        <attr name="pkpvDefaultButtonBackgroundColor" format="reference"/>
+        <attr name="pkpvDefaultButtonRippleColor" format="reference"/>
+        <attr name="pkpvDefaultButtonCornerRadius" format="dimension"/>
+        <attr name="pkpvDefaultButtonStrokeWidth" format="dimension"/>
+        <attr name="pkpvDefaultButtonStrokeColor" format="reference"/>
+        <attr name="pkpvDeleteButtonIcon" format="reference"/>
+        <attr name="pkpvDeleteButtonIconSize" format="dimension"/>
+        <attr name="pkpvDeleteButtonBackgroundColor" format="reference"/>
+        <attr name="pkpvDeleteButtonRippleColor" format="reference"/>
+        <attr name="pkpvDeleteButtonCornerRadius" format="dimension"/>
+        <attr name="pkpvDeleteButtonStrokeWidth" format="dimension"/>
+        <attr name="pkpvDeleteButtonStrokeColor" format="reference"/>
+        <attr name="pkpvClearButtonEnabled" format="boolean"/>
+        <attr name="pkpvClearButtonText" format="string"/>
+        <attr name="pkpvClearButtonTextSize" format="integer"/>
+        <attr name="pkpvClearButtonTextColor" format="reference"/>
+        <attr name="pkpvClearButtonBackgroundColor" format="reference"/>
+        <attr name="pkpvClearButtonRippleColor" format="reference"/>
+        <attr name="pkpvClearButtonCornerRadius" format="dimension"/>
+        <attr name="pkpvClearButtonStrokeWidth" format="dimension"/>
+        <attr name="pkpvClearButtonStrokeColor" format="reference"/>
+        <attr name="pkpvDividerColor" format="reference"/>
+        <attr name="pkpvDividerWidth" format="dimension"/>
+        <attr name="pkpvDividerHeight" format="dimension"/>
+        <attr name="pkpvRootBackgroundDrawable" format="reference"/>
+    </declare-styleable>
+
+
+
+    <!-- Pin Key Pad Horizontal -->
+    <declare-styleable name="PinKeyPadHorizontalStyle">
+        <attr name="pkphDefaultButtonTextSize" format="integer"/>
+        <attr name="pkphDefaultButtonTextColor" format="reference"/>
+        <attr name="pkphDefaultButtonBackgroundColor" format="reference"/>
+        <attr name="pkphDefaultButtonRippleColor" format="reference"/>
+        <attr name="pkphDefaultButtonCornerRadius" format="dimension"/>
+        <attr name="pkphDefaultButtonStrokeWidth" format="dimension"/>
+        <attr name="pkphDefaultButtonStrokeColor" format="reference"/>
+        <attr name="pkphDeleteButtonIcon" format="reference"/>
+        <attr name="pkphDeleteButtonIconSize" format="dimension"/>
+        <attr name="pkphDeleteButtonBackgroundColor" format="reference"/>
+        <attr name="pkphDeleteButtonRippleColor" format="reference"/>
+        <attr name="pkphDeleteButtonCornerRadius" format="dimension"/>
+        <attr name="pkphDeleteButtonStrokeWidth" format="dimension"/>
+        <attr name="pkphDeleteButtonStrokeColor" format="reference"/>
+        <attr name="pkphClearButtonText" format="string"/>
+        <attr name="pkphClearButtonTextSize" format="integer"/>
+        <attr name="pkphClearButtonTextColor" format="string"/>
+        <attr name="pkphClearButtonBackgroundColor" format="reference"/>
+        <attr name="pkphClearButtonRippleColor" format="reference"/>
+        <attr name="pkphClearButtonCornerRadius" format="dimension"/>
+        <attr name="pkphClearButtonStrokeWidth" format="dimension"/>
+        <attr name="pkphClearButtonStrokeColor" format="reference"/>
+        <attr name="pkphEmptyButtonIcon" format="reference"/>
+        <attr name="pkphEmptyButtonIconSize" format="dimension"/>
+        <attr name="pkphEmptyButtonBackgroundColor" format="reference"/>
+        <attr name="pkphEmptyButtonCornerRadius" format="dimension"/>
+        <attr name="pkphEmptyButtonStrokeWidth" format="dimension"/>
+        <attr name="pkphEmptyButtonStrokeColor" format="reference"/>
+        <attr name="pkphDividerColor" format="reference"/>
+        <attr name="pkphDividerWidth" format="dimension"/>
+        <attr name="pkphDividerHeight" format="dimension"/>
+        <attr name="pkphRootBackgroundDrawable" format="reference"/>
+    </declare-styleable>
+
+</resources>
