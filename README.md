@@ -8,46 +8,46 @@
 
 ### XML
 
-| <center>Option</center> | <center>Description</center> |
-|:--------|:--------|
-| nkpTextCheckFormat | 입력값 포맷 체크 여부 |
-| nkpTextMaxLength | 입력할 수 있는 최대 자리 수 |
-| nkpDefaultButtonTextSize | 기본 버튼 글자 크기 |
-| nkpDefaultButtonTextColor | 기본 버튼 글자 색상 |
-| nkpDefaultButtonBackgroundColor | 기본 버튼 배경 색상 |
-| nkpDefaultButtonRippleColor | 기본 버튼 클릭 효과 색상 |
-| nkpDefaultButtonCornerRadius | 기본 버튼 코너 |
-| nkpDefaultButtonStrokeWidth | 기본 버튼 테두리 두께 |
-| nkpDefaultButtonStrokeColor | 기본 버튼 테두리 색상 |
-| nkpDeleteButtonIcon | 삭제 버튼 아이콘 |
-| nkpDeleteButtonIconSize | 삭제 버튼 아이콘 크기 |
-| nkpDeleteButtonBackgroundColor |삭제 버튼 배경 색상 |
-| nkpDeleteButtonRippleColor | 삭제 버튼 클릭 효과 색상 |
-| nkpDeleteButtonCornerRadius | 삭제 버튼 코너 |
-| nkpDeleteButtonStrokeWidth | 삭제 버튼 테두리 두께 |
-| nkpDeleteButtonStrokeColor | 삭제 버튼 테두리 색상 |
-| nkpClearButtonEnabled | 전체삭제 버튼 적용 여부 |
-| nkpClearButtonText | 전체삭제 버튼 텍스트 |
-| nkpClearButtonTextSize | 전체삭제 버튼 글자 크기 |
-| nkpClearButtonTextColor |전체삭제 버튼 글자 색상 |
-| nkpClearButtonBackgroundColor |전체삭제 버튼 배경 색상 |
-| nkpClearButtonRippleColor | 전체삭제 버튼 클릭 효과 색상 |
-| nkpClearButtonCornerRadius | 전체삭제 버튼 코너 |
-| nkpClearButtonStrokeWidth | 전체삭제 버튼 테두리 두께 |
-| nkpClearButtonStrokeColor | 전체삭제 버튼 테두리 색상 |
-| nkpDividerColor | 구분선 색상 |
-| nkpDividerWidth | 세로 구분선 폭 |
-| nkpDividerHeight | 가로 구분선 높이 |
-| nkpRootBackgroundDrawable | 배경 |
+| <center>Option</center> | <center>Default</center> | <center>Description</center> |
+|:--------|:--------|:--------|
+| nkpTextCheckFormat | true | 입력값 포맷 체크 여부 |
+| nkpTextMaxLength | 20 | 입력할 수 있는 최대 자리 수 |
+| nkpDefaultButtonTextSize | 24 | 기본 버튼 글자 크기 |
+| nkpDefaultButtonTextColor | #000000 | 기본 버튼 글자 색상 |
+| nkpDefaultButtonBackgroundColor | #00000000 | 기본 버튼 배경 색상 |
+| nkpDefaultButtonRippleColor | #00000000 | 기본 버튼 클릭 효과 색상 |
+| nkpDefaultButtonCornerRadius | 0dp | 기본 버튼 코너 |
+| nkpDefaultButtonStrokeWidth | 0dp | 기본 버튼 테두리 두께 |
+| nkpDefaultButtonStrokeColor | 0dp | 기본 버튼 테두리 색상 |
+| nkpDeleteButtonIcon | btn_keyboard_del_black.png | 삭제 버튼 아이콘 |
+| nkpDeleteButtonIconSize | 24dp | 삭제 버튼 아이콘 크기 |
+| nkpDeleteButtonBackgroundColor | #00000000 | 삭제 버튼 배경 색상 |
+| nkpDeleteButtonRippleColor | #00000000 | 삭제 버튼 클릭 효과 색상 |
+| nkpDeleteButtonCornerRadius | 0dp | 삭제 버튼 코너 |
+| nkpDeleteButtonStrokeWidth | 0dp | 삭제 버튼 테두리 두께 |
+| nkpDeleteButtonStrokeColor | #00000000 | 삭제 버튼 테두리 색상 |
+| nkpClearButtonEnabled | false | 전체삭제 버튼 적용 여부 |
+| nkpClearButtonText | CLEAR | 전체삭제 버튼 텍스트 |
+| nkpClearButtonTextSize | 24 | 전체삭제 버튼 글자 크기 |
+| nkpClearButtonTextColor | #000000 |전체삭제 버튼 글자 색상 |
+| nkpClearButtonBackgroundColor | #00000000 | 전체삭제 버튼 배경 색상 |
+| nkpClearButtonRippleColor | #00000000 | 전체삭제 버튼 클릭 효과 색상 |
+| nkpClearButtonCornerRadius | 0dp | 전체삭제 버튼 코너 |
+| nkpClearButtonStrokeWidth | 0dp | 전체삭제 버튼 테두리 두께 |
+| nkpClearButtonStrokeColor | #00000000 | 전체삭제 버튼 테두리 색상 |
+| nkpDividerColor | #00000000 | 구분선 색상 |
+| nkpDividerWidth | 0dp | 세로 구분선 폭 |
+| nkpDividerHeight | 0dp | 가로 구분선 높이 |
+| nkpRootBackgroundDrawable | #ffffff | 배경 |
 
 ### Kotlin
 
-| <center>Option</center> | <center>Description</center> |
+| <center>Function</center> | Parameter |<center>Description</center> |
 |:--------|:--------|
-| setTextMaxLength(length: Int) | 입력할 수 있는 최대 자리 수 설정 |
-| setClearKeyPadText() | 입력 값 초기화 |
-| setKeyPadText(text: String) |입력 값 설정 |
-| getKeyPadText() | 입력 값 가져오기 |
+| setTextMaxLength(length: Int) | 설정할 최대 자리 수 | 입력할 수 있는 최대 자리 수 설정 |
+| setClearKeyPadText() | Void | 입력 값 초기화 |
+| setKeyPadText(text: String) | 입력 값 | 입력 값 설정 |
+| getKeyPadText() | Void | 입력 값 가져오기 |
 <br/>
 <br/>
 
