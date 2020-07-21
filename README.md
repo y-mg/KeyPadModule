@@ -8,7 +8,6 @@
 
 ### XML
 
-<span style="color:#72822">
 | Option | Default | Description |
 |:----------|:----------|:----------|
 | **nkpTextCheckFormat** | <span style="color:red">true</span> |입력값 포맷 체크 여부 |
@@ -40,7 +39,6 @@
 | **nkpDividerWidth** | 0dp |세로 구분선 폭 |
 | **nkpDividerHeight** | 0dp |가로 구분선 높이 |
 | **nkpRootBackgroundDrawable** | #ffffff |배경 |
-</span>
 
 ### Kotlin
 
