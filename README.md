@@ -43,7 +43,7 @@
 ### Kotlin
 
 | <center>Function</center> | Parameter |<center>Description</center> |
-|:--------|:--------|
+|:--------|:--------|:--------|
 | setTextMaxLength(length: Int) | 설정할 최대 자리 수 | 입력할 수 있는 최대 자리 수 설정 |
 | setClearKeyPadText() | Void | 입력 값 초기화 |
 | setKeyPadText(text: String) | 입력 값 | 입력 값 설정 |
