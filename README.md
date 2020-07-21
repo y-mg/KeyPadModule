@@ -39,7 +39,6 @@
 | nkpDividerWidth | 세로 구분선 폭 |
 | nkpDividerHeight | 가로 구분선 높이 |
 | nkpRootBackgroundDrawable | 배경 |
-<br/>
 
 ### Kotlin
 
@@ -87,7 +86,6 @@
 | dkpDividerWidth | 세로 구분선 폭 |
 | dkpDividerHeight | 가로 구분선 높이 |
 | dkpRootBackgroundDrawable | 배경 |
-<br/>
 
 ### Kotlin
 
@@ -141,7 +139,6 @@
 | pkpvDividerWidth | 세로 구분선 폭 |
 | pkpvDividerHeight | 가로 구분선 높이 |
 | pkpvRootBackgroundDrawable | 배경 |
-<br/>
 
 ### Kotlin
 
@@ -198,7 +195,6 @@
 | pkphDividerWidth | 세로 구분선 폭 |
 | pkphDividerHeight | 가로 구분선 높이 |
 | pkphRootBackgroundDrawable | 배경 |
-<br/>
 
 ### Kotlin
 
