@@ -8,37 +8,39 @@
 
 ### XML
 
+<span style="color:#72822">
 | Option | Default | Description |
-|----------|----------|----------|
-|**nkpTextCheckFormat** |true |입력값 포맷 체크 여부 |
-|**nkpTextMaxLength** |20 |입력할 수 있는 최대 자리 수 |
-|**nkpDefaultButtonTextSize** |24 |기본 버튼 글자 크기 |
-|**nkpDefaultButtonTextColor** |#000000 |기본 버튼 글자 색상 |
-|**nkpDefaultButtonBackgroundColor** |#00000000 |기본 버튼 배경 색상 |
-|**nkpDefaultButtonRippleColor** |#00000000 |기본 버튼 클릭 효과 색상 |
-|**nkpDefaultButtonCornerRadius** |0dp |기본 버튼 코너 |
-|**nkpDefaultButtonStrokeWidth** |0dp |기본 버튼 테두리 두께 |
-|**nkpDefaultButtonStrokeColor** |0dp |기본 버튼 테두리 색상 |
-|**nkpDeleteButtonIcon** |btn_keyboard_del_black.png |삭제 버튼 아이콘 |
-|**nkpDeleteButtonIconSize** |24dp |삭제 버튼 아이콘 크기 |
-|**nkpDeleteButtonBackgroundColor** |#00000000 |삭제 버튼 배경 색상 |
-|**nkpDeleteButtonRippleColor** |#00000000 |삭제 버튼 클릭 효과 색상 |
-|**nkpDeleteButtonCornerRadius** |0dp |삭제 버튼 코너 |
-|**nkpDeleteButtonStrokeWidth** |0dp |삭제 버튼 테두리 두께 |
-|**nkpDeleteButtonStrokeColor** |#00000000 |삭제 버튼 테두리 색상 |
-|**nkpClearButtonEnabled** |false |전체삭제 버튼 적용 여부 |
-|**nkpClearButtonText** |CLEAR |전체삭제 버튼 텍스트 |
-|**nkpClearButtonTextSize** |24 |전체삭제 버튼 글자 크기 |
-|**nkpClearButtonTextColor** |#000000 |전체삭제 버튼 글자 색상 |
-|**nkpClearButtonBackgroundColor** |#00000000 |전체삭제 버튼 배경 색상 |
-|**nkpClearButtonRippleColor** |#00000000 |전체삭제 버튼 클릭 효과 색상 |
-|**nkpClearButtonCornerRadius** |0dp |전체삭제 버튼 코너 |
-|**nkpClearButtonStrokeWidth** |0dp |전체삭제 버튼 테두리 두께 |
-|**nkpClearButtonStrokeColor** |#00000000 |전체삭제 버튼 테두리 색상 |
-|**nkpDividerColor** |#00000000 |구분선 색상 |
-|**nkpDividerWidth** |0dp |세로 구분선 폭 |
-|**nkpDividerHeight** |0dp |가로 구분선 높이 |
-|**nkpRootBackgroundDrawable** |#ffffff |배경 |
+|:----------|:----------|:----------|
+| **nkpTextCheckFormat** | <span style="color:red">true</span> |입력값 포맷 체크 여부 |
+| **nkpTextMaxLength** | 20 |입력할 수 있는 최대 자리 수 |
+| **nkpDefaultButtonTextSize** | 24 |기본 버튼 글자 크기 |
+| **nkpDefaultButtonTextColor** | #000000 |기본 버튼 글자 색상 |
+| **nkpDefaultButtonBackgroundColor** | #00000000 |기본 버튼 배경 색상 |
+| **nkpDefaultButtonRippleColor** | #00000000 |기본 버튼 클릭 효과 색상 |
+| **nkpDefaultButtonCornerRadius** | 0dp |기본 버튼 코너 |
+| **nkpDefaultButtonStrokeWidth** | 0dp |기본 버튼 테두리 두께 |
+| **nkpDefaultButtonStrokeColor** | 0dp |기본 버튼 테두리 색상 |
+| **nkpDeleteButtonIcon** | btn_keyboard_del_black.png |삭제 버튼 아이콘 |
+| **nkpDeleteButtonIconSize** | 24dp |삭제 버튼 아이콘 크기 |
+| **nkpDeleteButtonBackgroundColor** | #00000000 |삭제 버튼 배경 색상 |
+| **nkpDeleteButtonRippleColor** | #00000000 |삭제 버튼 클릭 효과 색상 |
+| **nkpDeleteButtonCornerRadius** | 0dp |삭제 버튼 코너 |
+| **nkpDeleteButtonStrokeWidth** | 0dp |삭제 버튼 테두리 두께 |
+| **nkpDeleteButtonStrokeColor** | #00000000 |삭제 버튼 테두리 색상 |
+| **nkpClearButtonEnabled** | false |전체삭제 버튼 적용 여부 |
+| **nkpClearButtonText** | CLEAR |전체삭제 버튼 텍스트 |
+| **nkpClearButtonTextSize** | 24 |전체삭제 버튼 글자 크기 |
+| **nkpClearButtonTextColor** | #000000 |전체삭제 버튼 글자 색상 |
+| **nkpClearButtonBackgroundColor** | #00000000 |전체삭제 버튼 배경 색상 |
+| **nkpClearButtonRippleColor** | #00000000 |전체삭제 버튼 클릭 효과 색상 |
+| **nkpClearButtonCornerRadius** | 0dp |전체삭제 버튼 코너 |
+| **nkpClearButtonStrokeWidth** | 0dp |전체삭제 버튼 테두리 두께 |
+| **nkpClearButtonStrokeColor** | #00000000 |전체삭제 버튼 테두리 색상 |
+| **nkpDividerColor** | #00000000 |구분선 색상 |
+| **nkpDividerWidth** | 0dp |세로 구분선 폭 |
+| **nkpDividerHeight** | 0dp |가로 구분선 높이 |
+| **nkpRootBackgroundDrawable** | #ffffff |배경 |
+</span>
 
 ### Kotlin
 
