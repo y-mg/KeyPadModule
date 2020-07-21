@@ -6,9 +6,8 @@
 
 ## 1. NumberKeyPadView
 
-#### XML
+### XML
 
-|:--------:|:--------:|
 | <center>Option</center> | <center>Description</center> |
 |:--------|:--------|
 | nkpTextCheckFormat | 입력값 포맷 체크 여부 |
@@ -42,10 +41,10 @@
 | nkpRootBackgroundDrawable | 배경 |
 <br/>
 
-#### Kotlin
+### Kotlin
 
 | <center>Option</center> | <center>Description</center> |
-|:--------:|:--------:|
+|:--------|:--------|
 | setTextMaxLength(length: Int) | 입력할 수 있는 최대 자리 수 설정 |
 | setClearKeyPadText() | 입력 값 초기화 |
 | setKeyPadText(text: String) |입력 값 설정 |
@@ -57,10 +56,10 @@
 
 ## 2. DecimalKeyPadView
 
-#### XML
+### XML
 
 | <center>Option</center> | <center>Description</center> |
-|:--------:|:--------:|
+|:--------|:--------|
 | dkpTextMaxLength | 입력할 수 있는 최대 자리 수 |
 | dkpTextDecimalCut | 입력할 수 있는 소수점 최대 자리 수 |
 | dkpDefaultButtonTextSize | 기본 버튼 글자 크기 |
@@ -90,10 +89,10 @@
 | dkpRootBackgroundDrawable | 배경 |
 <br/>
 
-#### Kotlin
+### Kotlin
 
 | <center>Option</center> | <center>Description</center> |
-|:--------:|:--------:|
+|:--------|:--------|
 | setTextMaxLength(length: Int) | 입력할 수 있는 최대 자리 수 설정 |
 | setTextDecimalCut(length: Int) | 입력할 수 있는 소수점 최대 자리 수 설정 |
 | setClearKeyPadText() | 입력 값 초기화 |
@@ -106,10 +105,10 @@
 
 ## 3. PinKeyPadVerticalView
 
-#### XML
+### XML
 
 | <center>Option</center> | <center>Description</center> |
-|:--------:|:--------:|
+|:--------|:--------|
 | piDotLength | Dot 길이 |
 | piDotDiameter | Dot 지름 |
 | piDotSpace | Dot 사이 공간 |
@@ -144,10 +143,10 @@
 | pkpvRootBackgroundDrawable | 배경 |
 <br/>
 
-#### Kotlin
+### Kotlin
 
 |  <center>Option</center> | <center>Description</center> |
-|:--------:|:--------:|
+|:--------|:--------|
 | setClearKeyPadText() | 입력 값 초기화 |
 | getKeyPadText() | 입력 값 가져오기 |
 <br/>
@@ -160,7 +159,7 @@
 ### XML
 
 | <center>Option</center> | <center>Description</center> |
-|:--------:|:--------:|
+|:--------|:--------|
 | piDotLength | Dot 길이 |
 | piDotDiameter | Dot 지름 |
 | piDotSpace | Dot 사이 공간 |
@@ -204,7 +203,7 @@
 ### Kotlin
 
 |  <center>Option</center> | <center>Description</center> |
-|:--------:|:--------:|
+|:--------|:--------|
 | setClearKeyPadText() | 입력 값 초기화 |
 | getKeyPadText() | 입력 값 가져오기 |
 <br/>
