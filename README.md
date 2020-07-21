@@ -2,18 +2,14 @@
 <br/>
 <br/>
 
-|  <center>Header1</center> |  <center>Header2</center> |  <center>Header3</center> |
-|:--------|:--------|:--------|
-|**nkpTextCheckFormat** |true |입력값 포맷 체크 여부 |
-|**cell 2x1** |cell 2x2 |cell 2x3 |
-|**cell 3x1** |cell 3x2 |cell 3x3 |
+
 
 ## 1. NumberKeyPadView
 
 ### XML
 
-|  <center>Option</center> |  <center>Default</center> |  <center>Description</center> |
-|:--------|:--------|:--------|
+| Option | Default | Description |
+|----------|----------|----------|
 |**nkpTextCheckFormat** |true |입력값 포맷 체크 여부 |
 |**nkpTextMaxLength** |20 |입력할 수 있는 최대 자리 수 |
 |**nkpDefaultButtonTextSize** |24 |기본 버튼 글자 크기 |
