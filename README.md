@@ -8,7 +8,7 @@
 
 ### XML
 
-| <center>Option</center> | <center>Default</center> | <center>Description</center> |
+|  <center>Option</center> | <center>Default</center> | <center>Description</center>  |
 |:--------|:--------|:--------|
 |**nkpTextCheckFormat** |true |입력값 포맷 체크 여부 |
 |**nkpTextMaxLength** |20 |입력할 수 있는 최대 자리 수 |
