@@ -40,7 +40,6 @@
 | nkpDividerHeight | 가로 구분선 높이 |
 | nkpRootBackgroundDrawable | 배경 |
 <br/>
-<br/>
 
 
 #### Kotlin
@@ -89,7 +88,6 @@
 | dkpDividerWidth | 세로 구분선 폭 |
 | dkpDividerHeight | 가로 구분선 높이 |
 | dkpRootBackgroundDrawable | 배경 |
-<br/>
 <br/>
 
 
@@ -146,7 +144,6 @@
 | pkpvDividerHeight | 가로 구분선 높이 |
 | pkpvRootBackgroundDrawable | 배경 |
 <br/>
-<br/>
 
 
 #### Kotlin
@@ -162,7 +159,7 @@
 
 ## 4. PinKeyPadHorizontalView
 
-#### XML
+### XML
 
 | <center>Option</center> | <center>Description</center> |
 |:--------:|:--------:|
@@ -205,10 +202,9 @@
 | pkphDividerHeight | 가로 구분선 높이 |
 | pkphRootBackgroundDrawable | 배경 |
 <br/>
-<br/>
 
 
-#### Kotlin
+### Kotlin
 
 |  <center>Option</center> | <center>Description</center> |
 |:--------:|:--------:|
