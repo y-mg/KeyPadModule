@@ -8,8 +8,9 @@
 
 #### XML
 
-| <center>Option</center> | <center>Description</center> |
 |:--------:|:--------:|
+| <center>Option</center> | <center>Description</center> |
+|:--------|:--------|
 | nkpTextCheckFormat | 입력값 포맷 체크 여부 |
 | nkpTextMaxLength | 입력할 수 있는 최대 자리 수 |
 | nkpDefaultButtonTextSize | 기본 버튼 글자 크기 |
@@ -40,7 +41,6 @@
 | nkpDividerHeight | 가로 구분선 높이 |
 | nkpRootBackgroundDrawable | 배경 |
 <br/>
-
 
 #### Kotlin
 
@@ -89,7 +89,6 @@
 | dkpDividerHeight | 가로 구분선 높이 |
 | dkpRootBackgroundDrawable | 배경 |
 <br/>
-
 
 #### Kotlin
 
@@ -144,7 +143,6 @@
 | pkpvDividerHeight | 가로 구분선 높이 |
 | pkpvRootBackgroundDrawable | 배경 |
 <br/>
-
 
 #### Kotlin
 
@@ -202,7 +200,6 @@
 | pkphDividerHeight | 가로 구분선 높이 |
 | pkphRootBackgroundDrawable | 배경 |
 <br/>
-
 
 ### Kotlin
 
