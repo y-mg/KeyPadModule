@@ -10,7 +10,7 @@
 
 | Option | Default | Description |
 |:----------|:----------|:----------|
-| nkpTextCheckFormat | true | 입력값 포맷 체크 여부 |
+| <span style="color:blue">nkpTextCheckFormat</span> | <span style="color:blue">true</span> | <span style="color:black">입력값 포맷 체크 여부</span> |
 | nkpTextMaxLength | 20 | 입력할 수 있는 최대 자리 수 |
 | nkpDefaultButtonTextSize | 24 | 기본 버튼 글자 크기 |
 | nkpDefaultButtonTextColor | #000000 | 기본 버튼 글자 색상 |
@@ -162,7 +162,7 @@
 
 
 
-## 4. PinKeyPadHorizontalView
+## 5. PinKeyPadHorizontalView
 
 ### XML
 
