@@ -139,13 +139,13 @@
 | pkpvDeleteButtonStrokeColor | #00000000 | 삭제 버튼 테두리 색상 |
 | pkpvClearButtonEnabled | false | 전체삭제 버튼 적용 여부 |
 | pkpvClearButtonText | CLEAR | 전체삭제 버튼 텍스트 |
-| pkpvClearButtonTextSize | 24 | 기본 버튼 글자 크기 |
-| pkpvClearButtonTextColor | #000000 | 기본 버튼 글자 색상 |
-| pkpvClearButtonBackgroundColor | #00000000 | 기본 버튼 배경 색상 |
-| pkpvClearButtonRippleColor | #00000000 | 기본 버튼 클릭 효과 색상 |
-| pkpvClearButtonCornerRadius | 0dp | 기본 버튼 코너 |
-| pkpvClearButtonStrokeWidth | 0dp | 기본 버튼 테두리 두께 |
-| pkpvClearButtonStrokeColor | #00000000 | 기본 버튼 테두리 색상 |
+| pkpvClearButtonTextSize | 24 | 전체삭제 버튼 글자 크기 |
+| pkpvClearButtonTextColor | #000000 | 전체삭제 버튼 글자 색상 |
+| pkpvClearButtonBackgroundColor | #00000000 | 전체삭제 버튼 배경 색상 |
+| pkpvClearButtonRippleColor | #00000000 | 전체삭제 버튼 클릭 효과 색상 |
+| pkpvClearButtonCornerRadius | 0dp | 전체삭제 버튼 코너 |
+| pkpvClearButtonStrokeWidth | 0dp | 전체삭제 버튼 테두리 두께 |
+| pkpvClearButtonStrokeColor | #00000000 | 전체삭제 버튼 테두리 색상 |
 | pkpvDividerColor | #00000000 | 구분선 색상 |
 | pkpvDividerWidth | 0dp | 세로 구분선 폭 |
 | pkpvDividerHeight | 0dp | 가로 구분선 높이 |
