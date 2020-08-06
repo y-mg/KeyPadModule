@@ -2,12 +2,19 @@
 <resources>
 
     <!-- Number Key Pad -->
-    <style name="NumberKeyPadStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
+    <style name="NumberKeyPadStyle" parent="@style/Widget.MaterialComponents.Button">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/black_000000</item>
+        <item name="android:backgroundTint">@null</item>
         <item name="android:gravity">center</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:stateListAnimator">@null</item>
+        <item name="android:minWidth">1dp</item>
+        <item name="android:minHeight">1dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
         <item name="backgroundTint">@color/transparent_00000000</item>
         <item name="iconSize">24dp</item>
         <item name="iconTint">@null</item>
@@ -21,12 +28,19 @@
 
 
     <!-- Decimal Key Pad -->
-    <style name="DecimalKeyPadStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
+    <style name="DecimalKeyPadStyle" parent="@style/Widget.MaterialComponents.Button">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/black_000000</item>
+        <item name="android:backgroundTint">@null</item>
         <item name="android:gravity">center</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:stateListAnimator">@null</item>
+        <item name="android:minWidth">1dp</item>
+        <item name="android:minHeight">1dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
         <item name="backgroundTint">@color/transparent_00000000</item>
         <item name="iconSize">24dp</item>
         <item name="iconTint">@null</item>
@@ -40,12 +54,19 @@
 
 
     <!-- Pin Key Pad Vertical -->
-    <style name="PinKeyPadVerticalStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
+    <style name="PinKeyPadVerticalStyle" parent="@style/Widget.MaterialComponents.Button">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/black_000000</item>
+        <item name="android:backgroundTint">@null</item>
         <item name="android:gravity">center</item>
         <item name="android:textAllCaps">false</item>
-        <item name="elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:minWidth">1dp</item>
+        <item name="android:minHeight">1dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
         <item name="backgroundTint">@color/transparent_00000000</item>
         <item name="iconSize">24dp</item>
         <item name="iconTint">@null</item>
@@ -59,12 +80,19 @@
 
 
     <!-- Pin Key Pad Horizontal -->
-    <style name="PinKeyPadHorizontalStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
+    <style name="PinKeyPadHorizontalStyle" parent="@style/Widget.MaterialComponents.Button">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/black_000000</item>
+        <item name="android:backgroundTint">@null</item>
         <item name="android:gravity">center</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:stateListAnimator">@null</item>
+        <item name="android:minWidth">1dp</item>
+        <item name="android:minHeight">1dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
         <item name="backgroundTint">@color/transparent_00000000</item>
         <item name="iconSize">24dp</item>
         <item name="iconTint">@null</item>
