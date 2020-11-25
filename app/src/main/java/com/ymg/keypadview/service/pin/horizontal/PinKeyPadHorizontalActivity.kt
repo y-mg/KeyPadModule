@@ -3,19 +3,25 @@ package com.ymg.keypadview.service.pin.horizontal
 import android.os.Bundle
 import android.util.Log
 import com.ymg.keypadmodule.pin.horizontal.PinKeyPadHorizontalView
-import com.ymg.keypadview.R
+import com.ymg.keypadview.databinding.ActivityPinKeyPadHorizontalBinding
 import com.ymg.keypadview.main.BasicActivity
-import kotlinx.android.synthetic.main.activity_pin_key_pad_horizontal.*
 
 
 class PinKeyPadHorizontalActivity : BasicActivity() {
 
+    private lateinit var viewBinding: ActivityPinKeyPadHorizontalBinding
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pin_key_pad_horizontal)
+        viewBinding = ActivityPinKeyPadHorizontalBinding.inflate(layoutInflater)
+        setContentView(viewBinding.root)
 
-        pinKeyPadHorizontalView.setAttachPinIndicatorView(pinIndicatorView)
-        pinKeyPadHorizontalView.setPinKeyPadHorizontalListener(pinKeyPadHorizontalListener)
+        viewBinding.apply {
+            pinKeyPadHorizontalView.setAttachPinIndicatorView(pinIndicatorView)
+            pinKeyPadHorizontalView.setPinKeyPadHorizontalListener(pinKeyPadHorizontalListener)
+        }
     }
 
     private var pinKeyPadHorizontalListener = object : PinKeyPadHorizontalView.PinKeyPadHorizontalListener {

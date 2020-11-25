@@ -3,13 +3,13 @@ package com.ymg.keypadmodule.number
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
+import android.view.LayoutInflater
 import android.view.View
-import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import androidx.core.content.ContextCompat
 import com.google.android.material.button.MaterialButton
 import com.ymg.keypadmodule.R
-
+import com.ymg.keypadmodule.databinding.ViewNumberKeyPadBinding
 
 
 class NumberKeyPadView @JvmOverloads
@@ -27,6 +27,8 @@ constructor(
         const val TOTAL_DIVIDER_COUNT = 11
     }
 
+    private lateinit var viewBinding: ViewNumberKeyPadBinding
+
     // 기본 버튼 리스트, 구분선 리스트
     private val defaultButtonList: MutableList<MaterialButton> = ArrayList(TOTAL_DEFAULT_BUTTON_COUNT)
     private val dividerList: MutableList<View> = ArrayList(TOTAL_DIVIDER_COUNT)
@@ -35,11 +37,6 @@ constructor(
     private var keyPadTextCheckFormat = true
     private var keyPadTextValue = ""
     private var keyPadTextMaxLength: Int = 0
-
-    // 삭제 버튼, 전체삭제 버튼, Root Layout
-    private var btnDelete: MaterialButton? = null
-    private var btnClear: MaterialButton? = null
-    private var rootLayout: LinearLayout? = null
 
     // 키 패드 리스너
     private var numberKeyPadListener: NumberKeyPadListener? = null
@@ -330,40 +327,36 @@ constructor(
         dividerHeight: Int,
         rootBackgroundDrawable: Int
     ) {
-        val container = View.inflate(context, R.layout.view_number_key_pad, this)
-        btnDelete = container.findViewById(R.id.btnDelete)
-        btnClear = container.findViewById(R.id.btnClear)
-        rootLayout = container.findViewById(R.id.rootLayout)
+        viewBinding = ViewNumberKeyPadBinding.inflate(LayoutInflater.from(context), this)
 
         // 기본 버튼
         defaultButtonList.apply {
-            add(container.findViewById(R.id.btn0))
-            add(container.findViewById(R.id.btn1))
-            add(container.findViewById(R.id.btn2))
-            add(container.findViewById(R.id.btn3))
-            add(container.findViewById(R.id.btn4))
-            add(container.findViewById(R.id.btn5))
-            add(container.findViewById(R.id.btn6))
-            add(container.findViewById(R.id.btn7))
-            add(container.findViewById(R.id.btn8))
-            add(container.findViewById(R.id.btn9))
+            add(viewBinding.btn0)
+            add(viewBinding.btn1)
+            add(viewBinding.btn2)
+            add(viewBinding.btn3)
+            add(viewBinding.btn4)
+            add(viewBinding.btn5)
+            add(viewBinding.btn6)
+            add(viewBinding.btn7)
+            add(viewBinding.btn8)
+            add(viewBinding.btn9)
         }
 
         // 구분선
         dividerList.apply {
-            add(container.findViewById(R.id.divider1))
-            add(container.findViewById(R.id.divider2))
-            add(container.findViewById(R.id.divider3))
-            add(container.findViewById(R.id.divider4))
-            add(container.findViewById(R.id.divider5))
-            add(container.findViewById(R.id.divider6))
-            add(container.findViewById(R.id.divider7))
-            add(container.findViewById(R.id.divider8))
-            add(container.findViewById(R.id.divider9))
-            add(container.findViewById(R.id.divider10))
-            add(container.findViewById(R.id.divider11))
+            add(viewBinding.divider1)
+            add(viewBinding.divider2)
+            add(viewBinding.divider3)
+            add(viewBinding.divider4)
+            add(viewBinding.divider5)
+            add(viewBinding.divider6)
+            add(viewBinding.divider7)
+            add(viewBinding.divider8)
+            add(viewBinding.divider9)
+            add(viewBinding.divider10)
+            add(viewBinding.divider11)
         }
-
 
         // 키 패드 값 포맷 체크 여부 설정
         setTextCheckFormat(textCheckFormat)
@@ -473,7 +466,7 @@ constructor(
         deleteButtonStrokeWidth: Int,
         deleteButtonStrokeColor: Int
     ) {
-        btnDelete?.apply {
+        viewBinding.btnDelete.apply {
             setIconResource(deleteButtonIcon)
             iconSize = deleteButtonIconSize
             setBackgroundColor(ContextCompat.getColor(context, deleteButtonBackgroundColor))
@@ -501,7 +494,7 @@ constructor(
         clearButtonStrokeWidth: Int,
         clearButtonStrokeColor: Int
     ) {
-        btnClear?.apply {
+        viewBinding.btnClear.apply {
             if (clearButtonEnabled) {
                 clearButtonText?.let {
                     text = it
@@ -552,7 +545,7 @@ constructor(
      * 배경 설정
      */
     private fun setRootBackground(rootBackgroundDrawable: Int) {
-        rootLayout?.apply {
+        viewBinding.rootLayout.apply {
             setBackgroundResource(rootBackgroundDrawable)
         }
     }
@@ -571,20 +564,22 @@ constructor(
             }
         }
 
-        // 삭제 버튼
-        btnDelete?.setOnClickListener {
-            numberKeyPadListener?.numberKeyPadChanged(setDeleteKeyPadText())
-        }
+        viewBinding.btnDelete.apply {
+            // 삭제 버튼
+            setOnClickListener {
+                numberKeyPadListener?.numberKeyPadChanged(setDeleteKeyPadText())
+            }
 
-        // 삭제 버튼 크게 클릭
-        btnDelete?.setOnLongClickListener {
-            setClearKeyPadText()
-            true
-        }
+            // 삭제 버튼 크게 클릭
+            setOnLongClickListener {
+                setClearKeyPadText()
+                true
+            }
 
-        // 전체삭제 버튼
-        btnClear?.setOnClickListener {
-            setClearKeyPadText()
+            // 전체삭제 버튼
+            setOnClickListener {
+                setClearKeyPadText()
+            }
         }
     }
 

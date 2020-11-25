@@ -3,14 +3,14 @@ package com.ymg.keypadmodule.pin.horizontal
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
+import android.view.LayoutInflater
 import android.view.View
-import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import androidx.core.content.ContextCompat
 import com.google.android.material.button.MaterialButton
 import com.ymg.keypadmodule.R
+import com.ymg.keypadmodule.databinding.ViewPinKeyPadHorizontalBinding
 import com.ymg.keypadmodule.pin.indicator.PinIndicatorView
-import kotlinx.android.synthetic.main.view_pin_key_pad_horizontal.view.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -34,6 +34,8 @@ constructor(
         const val TOTAL_DIVIDER_COUNT = 13
     }
 
+    private lateinit var viewBinding: ViewPinKeyPadHorizontalBinding
+
     // 기본 버튼 리스트, 빈 버튼 리스트, 구분선 리스트
     private val defaultButtonList: MutableList<MaterialButton> = ArrayList(TOTAL_DEFAULT_BUTTON_COUNT)
     private val emptyButtonList: MutableList<MaterialButton> = ArrayList(TOTAL_EMPTY_BUTTON_COUNT)
@@ -45,11 +47,6 @@ constructor(
 
     // 기본 버튼 값 Array
     private val defaultButtonValueArray = intArrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
-
-    // 삭제 버튼, 전체삭제 버튼, Root Layout
-    private var btnDelete: MaterialButton? = null
-    private var btnClear: MaterialButton? = null
-    private var rootLayout: LinearLayout? = null
 
     // 키 패드 리스너
     private var pinKeyPadHorizontalListener: PinKeyPadHorizontalListener? = null
@@ -376,44 +373,40 @@ constructor(
         dividerHeight: Int,
         rootBackgroundDrawable: Int
     ) {
-        val container = View.inflate(context, R.layout.view_pin_key_pad_horizontal, this)
-        btnDelete = container.findViewById(R.id.btnDelete)
-        btnClear = container.findViewById(R.id.btnClear)
-        rootLayout = container.findViewById(R.id.rootLayout)
+        viewBinding = ViewPinKeyPadHorizontalBinding.inflate(LayoutInflater.from(context), this)
 
         // 숫자 버튼
         defaultButtonList.apply {
-            add(container.findViewById(R.id.btn0))
-            add(container.findViewById(R.id.btn1))
-            add(container.findViewById(R.id.btn2))
-            add(container.findViewById(R.id.btn3))
-            add(container.findViewById(R.id.btn4))
-            add(container.findViewById(R.id.btn5))
-            add(container.findViewById(R.id.btn6))
-            add(container.findViewById(R.id.btn7))
-            add(container.findViewById(R.id.btn8))
-            add(container.findViewById(R.id.btn9))
-            add(container.findViewById(R.id.btn10))
-            add(container.findViewById(R.id.btn11))
+            add(viewBinding.btn0)
+            add(viewBinding.btn1)
+            add(viewBinding.btn2)
+            add(viewBinding.btn3)
+            add(viewBinding.btn4)
+            add(viewBinding.btn5)
+            add(viewBinding.btn6)
+            add(viewBinding.btn7)
+            add(viewBinding.btn8)
+            add(viewBinding.btn9)
+            add(viewBinding.btn10)
+            add(viewBinding.btn11)
         }
 
         // 구분선
         dividerList.apply {
-            add(container.findViewById(R.id.divider1))
-            add(container.findViewById(R.id.divider2))
-            add(container.findViewById(R.id.divider3))
-            add(container.findViewById(R.id.divider4))
-            add(container.findViewById(R.id.divider5))
-            add(container.findViewById(R.id.divider6))
-            add(container.findViewById(R.id.divider7))
-            add(container.findViewById(R.id.divider8))
-            add(container.findViewById(R.id.divider9))
-            add(container.findViewById(R.id.divider10))
-            add(container.findViewById(R.id.divider11))
-            add(container.findViewById(R.id.divider12))
-            add(container.findViewById(R.id.divider13))
+            add(viewBinding.divider1)
+            add(viewBinding.divider2)
+            add(viewBinding.divider3)
+            add(viewBinding.divider4)
+            add(viewBinding.divider5)
+            add(viewBinding.divider6)
+            add(viewBinding.divider7)
+            add(viewBinding.divider8)
+            add(viewBinding.divider9)
+            add(viewBinding.divider10)
+            add(viewBinding.divider11)
+            add(viewBinding.divider12)
+            add(viewBinding.divider13)
         }
-
 
         // 기본 버튼 섞기 설정
         setDefaultButtonShuffle()
@@ -478,20 +471,22 @@ constructor(
      * 섞기 여부 설정
      */
     private fun setDefaultButtonShuffle() {
-        val keyPad: IntArray? = getDefaultButtonSwap(defaultButtonValueArray)
-        keyPad?.let {
-            btn0.text = it[0].toString()
-            btn1.text = it[1].toString()
-            btn2.text = it[2].toString()
-            btn3.text = it[3].toString()
-            btn4.text = it[4].toString()
-            btn5.text = it[5].toString()
-            btn6.text = it[6].toString()
-            btn7.text = it[7].toString()
-            btn8.text = it[8].toString()
-            btn9.text = it[9].toString()
-            btn10.text = it[10].toString()
-            btn11.text = it[11].toString()
+        val keyPad: IntArray = getDefaultButtonSwap(defaultButtonValueArray)
+        keyPad.let {
+            viewBinding.apply {
+                btn0.text = it[0].toString()
+                btn1.text = it[1].toString()
+                btn2.text = it[2].toString()
+                btn3.text = it[3].toString()
+                btn4.text = it[4].toString()
+                btn5.text = it[5].toString()
+                btn6.text = it[6].toString()
+                btn7.text = it[7].toString()
+                btn8.text = it[8].toString()
+                btn9.text = it[9].toString()
+                btn10.text = it[10].toString()
+                btn11.text = it[11].toString()
+            }
         }
 
         // 섞기 후 값이 11 or 12를 가지고 있는 버튼을 빈 버튼 리스트에 추가
@@ -504,7 +499,7 @@ constructor(
         }
     }
 
-    private fun getDefaultButtonSwap(intArray: IntArray): IntArray? {
+    private fun getDefaultButtonSwap(intArray: IntArray): IntArray {
         val length = intArray.size
         val random = Random()
         random.nextInt()
@@ -567,7 +562,7 @@ constructor(
         deleteButtonStrokeWidth: Int,
         deleteButtonStrokeColor: Int
     ) {
-        btnDelete?.apply {
+        viewBinding.btnDelete.apply {
             setIconResource(deleteButtonIcon)
             iconSize = deleteButtonIconSize
             setBackgroundColor(ContextCompat.getColor(context, deleteButtonBackgroundColor))
@@ -594,7 +589,7 @@ constructor(
         clearButtonStrokeWidth: Int,
         clearButtonStrokeColor: Int
     ) {
-        btnClear?.apply {
+        viewBinding.btnClear.apply {
             clearButtonText?.let {
                 text = it
             } ?: let {
@@ -669,7 +664,7 @@ constructor(
      * 배경 설정
      */
     private fun setRootBackground(rootBackgroundDrawable: Int) {
-        rootLayout?.apply {
+        viewBinding.rootLayout.apply {
             setBackgroundResource(rootBackgroundDrawable)
         }
     }
@@ -688,20 +683,22 @@ constructor(
             }
         }
 
-        // 삭제 버튼
-        btnDelete?.setOnClickListener {
-            pinKeyPadHorizontalListener?.pinKeyPadHorizontalChanged(setDeleteKeyPadText())
-        }
+        viewBinding.btnDelete.apply {
+            // 삭제 버튼
+            setOnClickListener {
+                pinKeyPadHorizontalListener?.pinKeyPadHorizontalChanged(setDeleteKeyPadText())
+            }
 
-        // 삭제 버튼 크게 클릭
-        btnDelete?.setOnLongClickListener {
-            setClearKeyPadText()
-            true
-        }
+            // 삭제 버튼 크게 클릭
+            setOnLongClickListener {
+                setClearKeyPadText()
+                true
+            }
 
-        // 전체삭제 버튼
-        btnClear?.setOnClickListener {
-            setClearKeyPadText()
+            // 전체삭제 버튼
+            setOnClickListener {
+                setClearKeyPadText()
+            }
         }
     }
 
