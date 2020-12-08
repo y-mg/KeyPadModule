@@ -22,9 +22,9 @@ class DecimalKeyPadActivity: BasicActivity() {
     }
 
     private var decimalKeyPadListener = object : DecimalKeyPadView.DecimalKeyPadListener {
-        override fun decimalKeyPadChanged(keyPadValue: String) {
-            Log.e("DEBUG", "Value: $keyPadValue")
-            viewBinding.textKeyPadValue.text = keyPadValue
+        override fun decimalKeyPadChanged(value: String) {
+            Log.e("DEBUG", "Value: $value")
+            viewBinding.textKeyPadValue.text = value
         }
     }
 }

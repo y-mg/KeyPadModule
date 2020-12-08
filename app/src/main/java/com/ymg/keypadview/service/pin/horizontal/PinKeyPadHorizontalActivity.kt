@@ -25,8 +25,8 @@ class PinKeyPadHorizontalActivity : BasicActivity() {
     }
 
     private var pinKeyPadHorizontalListener = object : PinKeyPadHorizontalView.PinKeyPadHorizontalListener {
-        override fun pinKeyPadHorizontalChanged(keyPadValue: String) {
-            Log.e("DEBUG", "Value: $keyPadValue")
+        override fun pinKeyPadHorizontalChanged(value: String) {
+            Log.e("DEBUG", "Value: $value")
         }
     }
 }

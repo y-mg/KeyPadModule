@@ -7,6 +7,14 @@ import android.widget.LinearLayout
 import androidx.core.view.ViewCompat
 import com.ymg.keypadmodule.R
 
+
+
+/**
+ * @author y-mg
+ *
+ * 이것은 PinKeyPad 와 함께 사용되는 indicator 입니다.
+ * This is the indicator used with PinKeyPad.
+ */
 class PinIndicatorView @JvmOverloads
 constructor(
     context: Context,
@@ -14,13 +22,11 @@ constructor(
     defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr) {
 
-    // Dot 길이, Fill Dot 아이콘, Empty Dot 아이콘
-    private var indicatorDotLength: Int = 0
-    private var indicatorFillDotDrawable: Int = 0
-    private var indicatorEmptyDotDrawable: Int = 0
+    private var dotLength: Int = 0
+    private var fillDot: Int = 0
+    private var emptyDot: Int = 0
 
-    // 이전에 입력된 키 패드 입력값 길이
-    private var previousKeyPadTextLength: Int = 0
+    private var previousKeyPadValueLength: Int = 0
 
 
 
@@ -28,117 +34,116 @@ constructor(
         val typedArray =
             context.theme.obtainStyledAttributes(attrs, R.styleable.PinIndicatorStyle, defStyleAttr, defStyleAttr)
 
-        // Dot 길이
+        // 점의 자릿수를 설정한다.
+        // Sets the number of digits of a dot.
         val dotLength =
             typedArray.getInt(R.styleable.PinIndicatorStyle_piDotLength, 6)
 
-
-
-        // Dot 지름
+        // 점의 지름을 설정한다.
+        // Sets the diameter of a dot.
         val dotDiameter =
             typedArray.getDimension(
                 R.styleable.PinIndicatorStyle_piDotDiameter,
                 context.resources.getDimension(R.dimen.pin_indicator_default_dot_diameter)
             ).toInt()
 
-        // Dot 사이 공간
+        // 점과 점 사이의 공간을 설정한다.
+        // Sets the space between the dot and the dot.
         val dotSpace =
             typedArray.getDimension(
                 R.styleable.PinIndicatorStyle_piDotSpace,
                 context.resources.getDimension(R.dimen.pin_indicator_default_dot_space)
             ).toInt()
 
-
-
-        // Dot Fill 아이콘
-        val fillDotDrawable =
+        // 채워진 점의 아이콘을 설정한다.
+        // Sets the icon for the filled dot.
+        val fillDot =
             typedArray.getResourceId(
-                R.styleable.PinIndicatorStyle_piFillDotDrawable,
+                R.styleable.PinIndicatorStyle_piFillDot,
                 R.drawable.dot_pin_on
             )
 
-        // Dot Empty 아이콘
-        val emptyDotDrawable =
+        // 비워진 점의 아이콘을 설정한다.
+        // Sets the icon of an empty dot.
+        val emptyDot =
             typedArray.getResourceId(
-                R.styleable.PinIndicatorStyle_piEmptyDotDrawable,
+                R.styleable.PinIndicatorStyle_piEmptyDot,
                 R.drawable.dot_pin_off
             )
 
-
-
         typedArray.recycle()
 
-        // 설정
+
         setInit(
             dotLength,
             dotDiameter,
             dotSpace,
-            fillDotDrawable,
-            emptyDotDrawable
+            fillDot,
+            emptyDot
         )
     }
 
 
 
     /**
-     * 설정
+     * Setting Init
      */
     private fun setInit(
         dotLength: Int,
         dotDiameter: Int,
         dotSpace: Int,
-        fillDotDrawable: Int,
-        emptyDotDrawable: Int
+        fillDot: Int,
+        emptyDot: Int
     ) {
-        // Dot 길이 설정
+        // Setting Dot Length
         setDotLength(dotLength)
 
-        // Dot Fill 설정
-        setFillDotDrawable(fillDotDrawable)
+        // Setting Fill Dot
+        setFillDot(fillDot)
 
-        // Dot Empty 설정
-        setEmptyDotDrawable(emptyDotDrawable)
+        // Setting Empty Dot
+        setEmptyDot(emptyDot)
 
-        // Dot 설정
+        // Setting Dot
         setDot(
             dotLength,
             dotDiameter,
             dotSpace,
-            emptyDotDrawable
+            emptyDot
         )
     }
 
 
 
     /**
-     * Dot 길이 설정
+     * Setting Dot Length
      */
     private fun setDotLength(dotLength: Int) {
-        indicatorDotLength = dotLength
+        this.dotLength = dotLength
     }
 
 
 
     /**
-     * Dot Fill 설정
+     * Setting Fill Dot
      */
-    private fun setFillDotDrawable(fillDotDrawable: Int) {
-        indicatorFillDotDrawable = fillDotDrawable
+    private fun setFillDot(fillDot: Int) {
+        this.fillDot = fillDot
     }
 
 
 
     /**
-     * Dot Empty 설정
+     * Setting Empty Dot
      */
-    private fun setEmptyDotDrawable(emptyDotDrawable: Int) {
-        indicatorEmptyDotDrawable = emptyDotDrawable
+    private fun setEmptyDot(emptyDot: Int) {
+        this.emptyDot = emptyDot
     }
 
 
 
     /**
-     * Dot 설정
+     * Setting Dot
      */
     private fun setDot(
         dotLength: Int,
@@ -163,35 +168,33 @@ constructor(
 
 
     /**
-     * Dot 업데이트
+     * Setting Update Dot
      */
-    fun setUpdateDot(keyPadTextLength: Int) {
+    internal fun setUpdateDot(keyPadValueLength: Int) {
         when {
-            // 키 패드 입력값이 있을 경우
-            keyPadTextLength > 0 -> {
+            keyPadValueLength > 0 -> {
                 when {
-                    keyPadTextLength > previousKeyPadTextLength -> {
-                        val dot = getChildAt(keyPadTextLength - 1)
-                        dot.setBackgroundResource(indicatorFillDotDrawable)
+                    keyPadValueLength > previousKeyPadValueLength -> {
+                        val dot = getChildAt(keyPadValueLength - 1)
+                        dot.setBackgroundResource(fillDot)
                     }
 
                     else -> {
-                        val dot = getChildAt(keyPadTextLength)
-                        dot.setBackgroundResource(indicatorEmptyDotDrawable)
+                        val dot = getChildAt(keyPadValueLength)
+                        dot.setBackgroundResource(emptyDot)
                     }
                 }
 
-                previousKeyPadTextLength = keyPadTextLength
+                previousKeyPadValueLength = keyPadValueLength
             }
 
-            // 키 패드 입력값이 없을 경우
             else -> {
                 for (i in 0 until childCount) {
                     val dot = getChildAt(i)
-                    dot.setBackgroundResource(indicatorEmptyDotDrawable)
+                    dot.setBackgroundResource(emptyDot)
                 }
 
-                previousKeyPadTextLength = 0
+                previousKeyPadValueLength = 0
             }
         }
     }
@@ -199,9 +202,9 @@ constructor(
 
 
     /**
-     * Dot 길이 가져오기
+     * Return Dot Length
      */
-    fun getIndicatorDotLength(): Int {
-        return indicatorDotLength
+    internal fun getDotLength(): Int {
+        return dotLength
     }
 }

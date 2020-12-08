@@ -7,6 +7,7 @@ import com.ymg.keypadview.databinding.ActivityPinKeyPadVerticalBinding
 import com.ymg.keypadview.main.BasicActivity
 
 
+
 class PinKeyPadVerticalActivity : BasicActivity() {
 
     private lateinit var viewBinding: ActivityPinKeyPadVerticalBinding
@@ -25,8 +26,8 @@ class PinKeyPadVerticalActivity : BasicActivity() {
     }
 
     private var pinKeyPadVerticalListener = object : PinKeyPadVerticalView.PinKeyPadVerticalListener {
-        override fun pinKeyPadVerticalChanged(keyPadValue: String) {
-            Log.e("DEBUG", "Value: $keyPadValue")
+        override fun pinKeyPadVerticalChanged(value: String) {
+            Log.e("DEBUG", "Value: $value")
         }
     }
 }

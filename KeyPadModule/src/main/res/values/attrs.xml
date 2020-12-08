@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Number Key Pad -->
+    <!-- NumberKeyPadView -->
     <declare-styleable name="NumberKeyPadStyle">
-        <attr name="nkpTextCheckFormat" format="boolean"/>
-        <attr name="nkpTextMaxLength" format="integer"/>
+        <attr name="nkpCheckFormat" format="boolean"/>
+        <attr name="nkpMaxLength" format="integer"/>
         <attr name="nkpDefaultButtonTextSize" format="integer"/>
         <attr name="nkpDefaultButtonTextColor" format="reference"/>
         <attr name="nkpDefaultButtonBackgroundColor" format="reference"/>
@@ -36,10 +36,10 @@
 
 
 
-    <!-- Decimal Key Pad -->
+    <!-- DecimalKeyPadView -->
     <declare-styleable name="DecimalKeyPadStyle">
-        <attr name="dkpTextMaxLength" format="integer"/>
-        <attr name="dkpTextDecimalCut" format="integer"/>
+        <attr name="dkpMaxLength" format="integer"/>
+        <attr name="dkpDecimalCut" format="integer"/>
         <attr name="dkpDefaultButtonTextSize" format="integer"/>
         <attr name="dkpDefaultButtonTextColor" format="reference"/>
         <attr name="dkpDefaultButtonBackgroundColor" format="reference"/>
@@ -69,18 +69,18 @@
 
 
 
-    <!-- Pin Indicator -->
+    <!-- PinIndicatorView -->
     <declare-styleable name="PinIndicatorStyle">
         <attr name="piDotLength" format="integer" />
         <attr name="piDotDiameter" format="dimension" />
         <attr name="piDotSpace" format="dimension" />
-        <attr name="piFillDotDrawable" format="reference" />
-        <attr name="piEmptyDotDrawable" format="reference" />
+        <attr name="piFillDot" format="reference" />
+        <attr name="piEmptyDot" format="reference" />
     </declare-styleable>
 
 
 
-    <!-- Pin Key Pad Vertical -->
+    <!-- PinKeyPadVerticalView -->
     <declare-styleable name="PinKeyPadVerticalStyle">
         <attr name="pkpvDefaultButtonTextSize" format="integer"/>
         <attr name="pkpvDefaultButtonTextColor" format="reference"/>
@@ -113,7 +113,7 @@
 
 
 
-    <!-- Pin Key Pad Horizontal -->
+    <!-- PinKeyPadHorizontalView -->
     <declare-styleable name="PinKeyPadHorizontalStyle">
         <attr name="pkphDefaultButtonTextSize" format="integer"/>
         <attr name="pkphDefaultButtonTextColor" format="reference"/>

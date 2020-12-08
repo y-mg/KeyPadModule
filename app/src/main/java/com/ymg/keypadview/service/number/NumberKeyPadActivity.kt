@@ -22,32 +22,9 @@ class NumberKeyPadActivity: BasicActivity() {
     }
 
     private var numberKeyPadListener = object : NumberKeyPadView.NumberKeyPadListener {
-        override fun numberKeyPadChanged(keyPadValue: String) {
-            Log.e("DEBUG", "Value: $keyPadValue")
-            viewBinding.textKeyPadValue.text = keyPadValue
+        override fun numberKeyPadChanged(value: String) {
+            Log.e("DEBUG", "Value: $value")
+            viewBinding.textKeyPadValue.text = value
         }
     }
 }
-
-
-
-/*
-class NumberKeyPadActivity: BasicActivity(), NumberKeypadView.NumberKeyPadListener {
-
-    private lateinit var viewBinding: ActivityNumberKeyPadBinding
-
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        viewBinding = ActivityNumberKeyPadBinding.inflate(layoutInflater)
-        setContentView(viewBinding.root)
-
-        viewBinding.numberKeyPadView.setKeyboardListener(this)
-    }
-
-    override fun numberKeyPadChanged(keyPadValue: String) {
-        Log.e("DEBUG", "Value: $keyPadValue")
-        viewBinding.textKeyPadValue.text = keyPadValue
-    }
-}*/
