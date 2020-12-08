@@ -475,7 +475,7 @@ private var decimalKeyPadListener = object : DecimalKeyPadView.DecimalKeyPadList
 > This is the PinKeyPad(Vertical) used with PinIndicator.
 
 
-### XML
+### XML Attributes
 
 ```xml
 <com.ymg.keypadmodule.pin.vertical.PinKeyPadVerticalView
@@ -664,7 +664,7 @@ private var pinKeyPadVerticalListener = object : PinKeyPadVerticalView.PinKeyPad
 > This is the PinKeyPad(Horizontal) used with PinIndicator.
 
 
-### XML
+### XML Attributes
 
 ```xml
 <com.ymg.keypadmodule.pin.horizontal.PinKeyPadHorizontalView
