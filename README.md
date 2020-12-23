@@ -6,6 +6,30 @@
 
 
 
+## Install
+[![](https://jitpack.io/v/y-mg/keypadmodule.svg)](https://jitpack.io/#y-mg/keypadmodule)
+
+Add Jitpack to your repositories in your `build.gradle` file
+
+```groovy
+allprojects {
+    repositories {
+      // ...
+      maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Add the below to your dependencies, again in your gradle.build file
+
+```groovy
+implementation 'com.github.y-mg:keypadmodule:{version}'
+```
+<br/>
+<br/>
+
+
+
 ## 1. NumberKeyPadView
 
 > 이것은 숫자 입력 키 패드입니다.<br/>
@@ -48,119 +72,119 @@
     app:nkpDividerHeight="3dp"
     app:nkpRootBackgroundDrawable="@color/black_000000" />
 ```
-- app:nkpCheckFormat
+- `app:nkpCheckFormat`
     - Format 을 체크한다.(true: Integer, false: Number)
     - Check the format.(true: Integer, false: Number)
 
-- app:nkpMaxLength
+- `app:nkpMaxLength`
     - 입력할 수 있는 자릿수를 설정한다.
     - Sets the number of digits that can be entered.
 
-- app:nkpDefaultButtonTextSize
+- `app:nkpDefaultButtonTextSize`
     - 기본 버튼의 글자 크기를 설정한다.
     - Sets the letter size of the default button.
 
-- app:nkpDefaultButtonTextColor
+- `app:nkpDefaultButtonTextColor`
     - 기본 버튼의 글자 색상을 설정한다.
     - Sets the text color of the default button.
 
-- app:nkpDefaultButtonBackgroundColor
+- `app:nkpDefaultButtonBackgroundColor`
     - 기본 버튼의 배경색을 설정한다.
     - Sets the background color of the default button.
 
-- app:nkpDefaultButtonRippleColor
+- `app:nkpDefaultButtonRippleColor`
     - 기본 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the default button.
 
-- app:nkpDefaultButtonCornerRadius
+- `app:nkpDefaultButtonCornerRadius`
     - 기본 버튼의 코너를 설정한다.
     - Set the corner of the default button.
 
-- app:nkpDefaultButtonStrokeWidth
+- `app:nkpDefaultButtonStrokeWidth`
     - 기본 버튼의 테두리 두께를 설정한다.
     - Set the border thickness of the default button.
 
-- app:nkpDefaultButtonStrokeColor
+- `app:nkpDefaultButtonStrokeColor`
     - 기본 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the default button.
 
-- app:nkpDeleteButtonIcon
+- `app:nkpDeleteButtonIcon`
     - 삭제 버튼의 아이콘을 설정한다.
     - Set the icon for the delete button.
 
-- app:nkpDeleteButtonIconSize
+- `app:nkpDeleteButtonIconSize`
     - 삭제 버튼의 아이콘 크기를 설정한다.
     - Sets the size of the icon for the delete button.
 
-- app:nkpDeleteButtonBackgroundColor
+- `app:nkpDeleteButtonBackgroundColor`
     - 삭제 버튼의 배경색을 설정한다.
     - Sets the background color of the delete button.
 
-- app:nkpDeleteButtonRippleColor
+- `app:nkpDeleteButtonRippleColor`
     - 삭제 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the delete button.
 
-- app:nkpDeleteButtonCornerRadius
+- `app:nkpDeleteButtonCornerRadius`
     - 삭제 버튼의 코너를 설정한다.
     - Set the corner of the delete button.
 
-- app:nkpDeleteButtonStrokeWidth
+- `app:nkpDeleteButtonStrokeWidth`
     - 삭제 버튼의 테두리 두께를 설정한다.
     - Sets the border thickness of the delete button.
 
-- app:nkpDeleteButtonStrokeColor
+- `app:nkpDeleteButtonStrokeColor`
     - 삭제 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the delete button.
 
-- app:nkpClearButtonEnabled
+- `app:nkpClearButtonEnabled`
     - 클리어 버튼의 적용 여부를 설정한다.
     - Sets whether the clear button is applied.
 
-- app:nkpClearButtonText
+- `app:nkpClearButtonText`
     - 클리어 버튼의 텍스트를 설정한다.
     - Sets the text of the clear button.
 
-- app:nkpClearButtonTextSize
+- `app:nkpClearButtonTextSize`
     - 클리어 버튼의 글자 크기를 설정한다.
     - Sets the letter size of the clear button.
 
-- app:nkpClearButtonTextColor
+- `app:nkpClearButtonTextColor`
     - 클리어 버튼의 글자 색상을 설정한다.
     - Sets the character color of the clear button.
 
-- app:nkpClearButtonBackgroundColor
+- `app:nkpClearButtonBackgroundColor`
     - 클리어 버튼의 배경색을 설정한다.
     - Set the background color of the clear button.
 
-- app:nkpClearButtonRippleColor
+- `app:nkpClearButtonRippleColor`
     - 클리어 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the clear button.
 
-- app:nkpClearButtonCornerRadius
+- `app:nkpClearButtonCornerRadius`
     - 클리어 버튼의 테두리를 설정한다.
     - Set the border of the clear button.
 
-- app:nkpClearButtonStrokeWidth
+- `app:nkpClearButtonStrokeWidth`
     - 클리어 버튼의 테두리 두께를 설정한다.
     - Set the border thickness of the clear button.
 
-- app:nkpClearButtonStrokeColor
+- `app:nkpClearButtonStrokeColor`
     - 클리어 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the clear button.
 
-- app:nkpDividerColor
+- `app:nkpDividerColor`
     - 구분선의 색상을 설정한다.
     - Sets the color of the dividing line.
 
-- app:nkpDividerWidth
+- `app:nkpDividerWidth`
     - 세로 구분선의 폭을 설정한다.
     - Sets the width of the vertical divider.
 
-- app:nkpDividerHeight
+- `app:nkpDividerHeight`
     - 가로 구분선의 높이를 설정한다.
     - Sets the height of the horizontal divider.
 
-- app:nkpRootBackgroundDrawable
+- `app:nkpRootBackgroundDrawable`
     - 배경색을 설정한다.
     - Set background color.
 
@@ -257,111 +281,111 @@ private var numberKeyPadListener = object : NumberKeyPadView.NumberKeyPadListene
     app:dkpDividerHeight="3dp"
     app:dkpRootBackgroundDrawable="@color/black_000000" />
 ```
-- app:dkpMaxLength
+- `app:dkpMaxLength`
     - 입력할 수 있는 자릿수를 설정한다.
     - Sets the number of digits that can be entered.
 
-- app:dkpDecimalCut
+- `app:dkpDecimalCut`
     - 소수점 이하 자릿수를 설정한다.
     - Sets the decimal place.
 
-- app:dkpDefaultButtonTextSize
+- `app:dkpDefaultButtonTextSize`
     - 기본 버튼의 글자 크기를 설정한다.
     - Sets the letter size of the default button.
 
-- app:dkpDefaultButtonTextColor
+- `app:dkpDefaultButtonTextColor`
     - 기본 버튼의 글자 색상을 설정한다.
     - Sets the text color of the default button.
 
-- app:dkpDefaultButtonBackgroundColor
+- `app:dkpDefaultButtonBackgroundColor`
     - 기본 버튼의 배경색을 설정한다.
     - Sets the background color of the default button.
 
-- app:dkpDefaultButtonRippleColor
+- `app:dkpDefaultButtonRippleColor`
     - 기본 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the default button.
 
-- app:dkpDefaultButtonCornerRadius
+- `app:dkpDefaultButtonCornerRadius`
     - 기본 버튼의 코너를 설정한다.
     - Set the corner of the default button.
 
-- app:dkpDefaultButtonStrokeWidth
+- `app:dkpDefaultButtonStrokeWidth`
     - 기본 버튼의 테두리 두께를 설정한다.
     - Set the border thickness of the default button.
 
-- app:dkpDefaultButtonStrokeColor
+- `app:dkpDefaultButtonStrokeColor`
     - 기본 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the default button.
 
-- app:dkpDeleteButtonIcon
+- `app:dkpDeleteButtonIcon`
     - 삭제 버튼의 아이콘을 설정한다.
     - Set the icon for the delete button.
 
-- app:dkpDeleteButtonIconSize
+- `app:dkpDeleteButtonIconSize`
     - 삭제 버튼의 아이콘 크기를 설정한다.
     - Sets the size of the icon for the delete button.
 
-- app:dkpDeleteButtonBackgroundColor
+- `app:dkpDeleteButtonBackgroundColor`
     - 삭제 버튼의 배경색을 설정한다.
     - Sets the background color of the delete button.
 
-- app:dkpDeleteButtonRippleColor
+- `app:dkpDeleteButtonRippleColor`
     - 삭제 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the delete button.
 
-- app:dkpDeleteButtonCornerRadius
+- `app:dkpDeleteButtonCornerRadius`
     - 삭제 버튼의 코너를 설정한다.
     - Set the corner of the delete button.
 
-- app:dkpDeleteButtonStrokeWidth
+- `app:dkpDeleteButtonStrokeWidth`
     - 삭제 버튼의 테두리 두께를 설정한다.
     - Sets the border thickness of the delete button.
 
-- app:dkpDeleteButtonStrokeColor
+- `app:dkpDeleteButtonStrokeColor`
     - 삭제 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the delete button.
 
-- app:dkpDotButtonTextSize
+- `app:dkpDotButtonTextSize`
     - 점 버튼의 글자 크기를 설정한다.
     - Sets the letter size of the dot button.
 
-- app:dkpDotButtonTextColor
+- `app:dkpDotButtonTextColor`
     - 점 버튼의 글자 색상을 설정한다.
     - Sets the character color of the dot button.
 
-- app:dkpDotButtonBackgroundColor
+- `app:dkpDotButtonBackgroundColor`
     - 점 버튼의 배경색을 설정한다.
     - Set the background color of the dot button.
 
-- app:dkpDotButtonRippleColor
+- `app:dkpDotButtonRippleColor`
     - 점 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the dot button.
 
-- app:dkpDotButtonCornerRadius
+- `app:dkpDotButtonCornerRadius`
     - 점 버튼의 테두리를 설정한다.
     - Set the border of the dot button.
 
-- app:dkpDotButtonStrokeWidth
+- `app:dkpDotButtonStrokeWidth`
     - 점 버튼의 테두리 두께를 설정한다.
     - Set the border thickness of the dot button.
 
-- app:dkpDotButtonStrokeColor
+- `app:dkpDotButtonStrokeColor`
     - 점 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the dot button.
 
-- app:dkpDividerColor
+- `app:dkpDividerColor`
     - 구분선의 색상을 설정한다.
     - Sets the color of the dividing line.
 
-- app:dkpDividerWidth
+- `app:dkpDividerWidth`
     - 세로 구분선의 폭을 설정한다.
     - Sets the width of the vertical divider.
 
-- app:dkpDividerHeight
+- `app:dkpDividerHeight`
     - 가로 구분선의 높이를 설정한다.
     - Sets the height of the horizontal divider.
 
-- app:dkpRootBackgroundDrawable
+- `app:dkpRootBackgroundDrawable`
     - 배경색을 설정한다.
     - Set background color.
 
@@ -444,23 +468,23 @@ private var decimalKeyPadListener = object : DecimalKeyPadView.DecimalKeyPadList
     app:piFillDot="@drawable/icon_pin_on"
     app:piEmptyDot="@drawable/icon_pin_off" />
 ```
-- app:piDotLength
+- `app:piDotLength`
     - 점의 자릿수를 설정한다.
     - Sets the number of digits of a dot.
 
-- app:piDotDiameter
+- `app:piDotDiameter`
     - 점의 지름을 설정한다.
     - Sets the diameter of a dot.
 
-- app:piDotSpace
+- `app:piDotSpace`
     - 점과 점 사이의 공간을 설정한다.
     - Sets the space between the dot and the dot.
 
-- app:piFillDot
+- `app:piFillDot`
     - 채워진 점의 아이콘을 설정한다.
     - Sets the icon for the filled dot.
 
-- app:piEmptyDot
+- `app:piEmptyDot`
     - 비워진 점의 아이콘을 설정한다.
     - Sets the icon of an empty dot.
 <br/>
@@ -509,111 +533,111 @@ private var decimalKeyPadListener = object : DecimalKeyPadView.DecimalKeyPadList
     app:pkpvDividerHeight="3dp"
     app:pkpvRootBackgroundDrawable="@color/black_000000" />
 ```
-- app:pkpvDefaultButtonTextSize
+- `app:pkpvDefaultButtonTextSize`
     - 기본 버튼의 글자 크기를 설정한다.
     - Sets the letter size of the default button.
 
-- app:pkpvDefaultButtonTextColor
+- `app:pkpvDefaultButtonTextColor`
     - 기본 버튼의 글자 색상을 설정한다.
     - Sets the text color of the default button.
 
-- app:pkpvDefaultButtonBackgroundColor
+- `app:pkpvDefaultButtonBackgroundColor`
     - 기본 버튼의 배경색을 설정한다.
     - Sets the background color of the default button.
 
-- app:pkpvDefaultButtonRippleColor
+- `app:pkpvDefaultButtonRippleColor`
     - 기본 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the default button.
 
-- app:pkpvDefaultButtonCornerRadius
+- `app:pkpvDefaultButtonCornerRadius`
     - 기본 버튼의 코너를 설정한다.
     - Set the corner of the default button.
 
-- app:pkpvDefaultButtonStrokeWidth
+- `app:pkpvDefaultButtonStrokeWidth`
     - 기본 버튼의 테두리 두께를 설정한다.
     - Set the border thickness of the default button.
 
-- app:pkpvDefaultButtonStrokeColor
+- `app:pkpvDefaultButtonStrokeColor`
     - 기본 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the default button.
 
-- app:pkpvDeleteButtonIcon
+- `app:pkpvDeleteButtonIcon`
     - 삭제 버튼의 아이콘을 설정한다.
     - Set the icon for the delete button.
 
-- app:pkpvDeleteButtonIconSize
+- `app:pkpvDeleteButtonIconSize`
     - 삭제 버튼의 아이콘 크기를 설정한다.
     - Sets the size of the icon for the delete button.
 
-- app:pkpvDeleteButtonBackgroundColor
+- `app:pkpvDeleteButtonBackgroundColor`
     - 삭제 버튼의 배경색을 설정한다.
     - Sets the background color of the delete button.
 
-- app:pkpvDeleteButtonRippleColor
+- `app:pkpvDeleteButtonRippleColor`
     - 삭제 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the delete button.
 
-- app:pkpvDeleteButtonCornerRadius
+- `app:pkpvDeleteButtonCornerRadius`
     - 삭제 버튼의 코너를 설정한다.
     - Set the corner of the delete button.
 
-- app:pkpvDeleteButtonStrokeWidth
+- `app:pkpvDeleteButtonStrokeWidth`
     - 삭제 버튼의 테두리 두께를 설정한다.
     - Sets the border thickness of the delete button.
 
-- app:pkpvDeleteButtonStrokeColor
+- `app:pkpvDeleteButtonStrokeColor`
     - 삭제 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the delete button.
 
-- app:pkpvClearButtonEnabled
+- `app:pkpvClearButtonEnabled`
     - 클리어 버튼 사용 여부를 설정한다.
     - Set whether or not to use the clear button.
 
-- app:pkpvClearButtonText
+- `app:pkpvClearButtonText`
     - 클리어 버튼의 텍스트를 설정한다.
     - Sets the text of the clear button.
 
-- app:pkpvClearButtonTextSize
+- `app:pkpvClearButtonTextSize`
     - 클리어 버튼의 글자 크기를 설정한다.
     - Sets the letter size of the clear button.
 
-- app:pkpvClearButtonTextColor
+- `app:pkpvClearButtonTextColor`
     - 클리어 버튼의 글자 색상을 설정한다.
     - Sets the character color of the clear button.
 
-- app:pkpvClearButtonBackgroundColor
+- `app:pkpvClearButtonBackgroundColor`
     - 클리어 버튼의 배경색을 설정한다.
     - Set the background color of the clear button.
 
-- app:pkpvClearButtonRippleColor
+- `app:pkpvClearButtonRippleColor`
     - 클리어 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the clear button.
 
-- app:pkpvClearButtonCornerRadius
+- `app:pkpvClearButtonCornerRadius`
     - 클리어 버튼의 테두리를 설정한다.
     - Set the border of the clear button.
 
-- app:pkpvClearButtonStrokeWidth
+- `app:pkpvClearButtonStrokeWidth`
     - 클리어 버튼의 테두리 두께를 설정한다.
     - Set the border thickness of the clear button.
 
-- app:pkpvClearButtonStrokeColor
+- `app:pkpvClearButtonStrokeColor`
     - 클리어 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the clear button.
 
-- app:pkpvDividerColor
+- `app:pkpvDividerColor`
     - 구분선의 색상을 설정한다.
     - Sets the color of the dividing line.
 
-- app:pkpvDividerWidth
+- `app:pkpvDividerWidth`
     - 세로 구분선의 폭을 설정한다.
     - Sets the width of the vertical divider.
 
-- app:pkpvDividerHeight
+- `app:pkpvDividerHeight`
     - 가로 구분선의 높이를 설정한다.
     - Sets the height of the horizontal divider.
 
-- app:pkpvRootBackgroundDrawable
+- `app:pkpvRootBackgroundDrawable`
     - 배경색을 설정한다.
     - Set background color.
 
@@ -703,131 +727,131 @@ private var pinKeyPadVerticalListener = object : PinKeyPadVerticalView.PinKeyPad
     app:pkphDividerHeight="3dp"
     app:pkphRootBackgroundDrawable="@color/black_000000" />
 ```
-- app:pkphDefaultButtonTextSize
+- `app:pkphDefaultButtonTextSize`
     - 기본 버튼의 글자 크기를 설정한다.
     - Sets the letter size of the default button.
 
-- app:pkphDefaultButtonTextColor
+- `app:pkphDefaultButtonTextColor`
     - 기본 버튼의 글자 색상을 설정한다.
     - Sets the text color of the default button.
 
-- app:pkphDefaultButtonBackgroundColor
+- `app:pkphDefaultButtonBackgroundColor`
     - 기본 버튼의 배경색을 설정한다.
     - Sets the background color of the default button.
 
-- app:pkphDefaultButtonRippleColor
+- `app:pkphDefaultButtonRippleColor`
     - 기본 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the default button.
 
-- app:pkphDefaultButtonCornerRadius
+- `app:pkphDefaultButtonCornerRadius`
     - 기본 버튼의 코너를 설정한다.
     - Set the corner of the default button.
 
-- app:pkphDefaultButtonStrokeWidth
+- `app:pkphDefaultButtonStrokeWidth`
     - 기본 버튼의 테두리 두께를 설정한다.
     - Set the border thickness of the default button.
 
-- app:pkphDefaultButtonStrokeColor
+- `app:pkphDefaultButtonStrokeColor`
     - 기본 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the default button.
 
-- app:pkphDeleteButtonIcon
+- `app:pkphDeleteButtonIcon`
     - 삭제 버튼의 아이콘을 설정한다.
     - Set the icon for the delete button.
 
-- app:pkphDeleteButtonIconSize
+- `app:pkphDeleteButtonIconSize`
     - 삭제 버튼의 아이콘 크기를 설정한다.
     - Sets the size of the icon for the delete button.
 
-- app:pkphDeleteButtonBackgroundColor
+- `app:pkphDeleteButtonBackgroundColor`
     - 삭제 버튼의 배경색을 설정한다.
     - Sets the background color of the delete button.
 
-- app:pkphDeleteButtonRippleColor
+- `app:pkphDeleteButtonRippleColor`
     - 삭제 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the delete button.
 
-- app:pkphDeleteButtonCornerRadius
+- `app:pkphDeleteButtonCornerRadius`
     - 삭제 버튼의 코너를 설정한다.
     - Set the corner of the delete button.
 
-- app:pkphDeleteButtonStrokeWidth
+- `app:pkphDeleteButtonStrokeWidth`
     - 삭제 버튼의 테두리 두께를 설정한다.
     - Sets the border thickness of the delete button.
 
-- app:pkphDeleteButtonStrokeColor
+- `app:pkphDeleteButtonStrokeColor`
     - 삭제 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the delete button.
 
-- app:pkphEmptyButtonIcon
+- `app:pkphEmptyButtonIcon`
     - 빈 버튼의 아이콘을 설정한다.
     - Set the icon for the empty button.
 
-- app:pkphEmptyButtonIconSize
+- `app:pkphEmptyButtonIconSize`
     - 빈 버튼의 아이콘 크기를 설정한다.
     - Sets the size of the icon for the empty button.
 
-- app:pkphEmptyButtonBackgroundColor
+- `app:pkphEmptyButtonBackgroundColor`
     - 빈 버튼의 배경색을 설정한다.
     - Sets the background color of the empty button.
 
-- app:pkphEmptyButtonCornerRadius
+- `app:pkphEmptyButtonCornerRadius`
     - 빈 버튼의 코너를 설정한다.
     - Set the corner of the empty button.
 
-- app:pkphEmptyButtonStrokeWidth
+- `app:pkphEmptyButtonStrokeWidth`
     - 빈 버튼의 테두리 두께를 설정한다.
     - Sets the border thickness of the empty button.
 
-- app:pkphEmptyButtonStrokeColor
+- `app:pkphEmptyButtonStrokeColor`
     - 빈 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the empty button.
 
-- app:pkphClearButtonText
+- `app:pkphClearButtonText`
     - 클리어 버튼의 텍스트를 설정한다.
     - Sets the text of the clear button.
 
-- app:pkphClearButtonTextSize
+- `app:pkphClearButtonTextSize`
     - 클리어 버튼의 글자 크기를 설정한다.
     - Sets the letter size of the clear button.
 
-- app:pkphClearButtonTextColor
+- `app:pkphClearButtonTextColor`
     - 클리어 버튼의 글자 색상을 설정한다.
     - Sets the character color of the clear button.
 
-- app:pkphClearButtonBackgroundColor
+- `app:pkphClearButtonBackgroundColor`
     - 클리어 버튼의 배경색을 설정한다.
     - Set the background color of the clear button.
 
-- app:pkphClearButtonRippleColor
+- `app:pkphClearButtonRippleColor`
     - 클리어 버튼의 효과 색상을 설정한다.
     - Sets the effect color of the clear button.
 
-- app:pkphClearButtonCornerRadius
+- `app:pkphClearButtonCornerRadius`
     - 클리어 버튼의 테두리를 설정한다.
     - Set the border of the clear button.
 
-- app:pkphClearButtonStrokeWidth
+- `app:pkphClearButtonStrokeWidth`
     - 클리어 버튼의 테두리 두께를 설정한다.
     - Set the border thickness of the clear button.
 
-- app:pkphClearButtonStrokeColor
+- `app:pkphClearButtonStrokeColor`
     - 클리어 버튼의 테두리 색상을 설정한다.
     - Sets the border color of the clear button.
 
-- app:pkphDividerColor
+- `app:pkphDividerColor`
     - 구분선의 색상을 설정한다.
     - Sets the color of the dividing line.
 
-- app:pkphDividerWidth
+- `app:pkphDividerWidth`
     - 세로 구분선의 폭을 설정한다.
     - Sets the width of the vertical divider.
 
-- app:pkphDividerHeight
+- `app:pkphDividerHeight`
     - 가로 구분선의 높이를 설정한다.
     - Sets the height of the horizontal divider.
 
-- app:pkphRootBackgroundDrawable
+- `app:pkphRootBackgroundDrawable`
     - 배경색을 설정한다.
     - Set background color.
 
